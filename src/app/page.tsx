@@ -1,69 +1,87 @@
-import Image from "next/image";
+"use client";
+
+import Link from "next/link";
+import { useEffect, useMemo, useState } from "react";
+import Progress from "@/components/Progress";
+import { courses, flattenAll, flattenLessons } from "@/lib/catalog";
+import { loadAllDone } from "@/lib/storage";
 
 export default function Home() {
+  const [done, setDone] = useState<Record<string, boolean>>({});
+  const [q, setQ] = useState("");
+
+  useEffect(() => {
+    setDone(loadAllDone());
+  }, []);
+
+  const query = q.trim().toLowerCase();
+  const results = useMemo(() => {
+    if (!query) return [];
+    return flattenAll().filter(
+      (e) =>
+        e.lesson.title.toLowerCase().includes(query) ||
+        e.course.title.toLowerCase().includes(query)
+    );
+  }, [query]);
+
+  const total = useMemo(() => flattenAll().length, []);
+  const doneCount = useMemo(
+    () => flattenAll().filter((e) => done[e.lesson.id]).length,
+    [done]
+  );
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <div>
+      <section>
+        <h1 className="text-[1.7rem] font-bold mb-2">I tuoi corsi, senza dashboard.</h1>
+        <p className="text-muted mb-5">
+          {courses.length} corsi · {total} lezioni · {doneCount} completate
+        </p>
+      </section>
+
+      <input
+        className="w-full px-3.5 py-2.5 rounded-[10px] border border-hairline bg-panel text-ink text-base placeholder:text-muted focus:outline-none focus:border-accent"
+        type="search"
+        placeholder="Cerca una lezione o un corso…"
+        value={q}
+        onChange={(e) => setQ(e.target.value)}
+      />
+
+      {query ? (
+        <section>
+          <h2 className="text-lg font-bold mt-6 mb-2.5">{results.length} risultati</h2>
+          {results.map((e) => (
+            <Link
+              key={e.lesson.id}
+              href={`/c/${e.course.id}/l/${e.lesson.id}`}
+              className="flex items-center gap-2.5 px-2.5 py-2 border-b border-hairline text-ink hover:bg-panel2"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+              <span className="flex-1">{e.lesson.title}</span>
+              <span className="inline-block bg-panel2 border border-hairline text-muted text-xs px-2 py-0.5 rounded-full whitespace-nowrap">
+                {e.course.title}
+              </span>
+            </Link>
+          ))}
+        </section>
+      ) : (
+        <section className="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-3.5 mt-4">
+          {courses.map((c) => {
+            const fl = flattenLessons(c);
+            const dn = fl.filter((x) => done[x.lesson.id]).length;
+            return (
+              <Link
+                key={c.id}
+                href={`/c/${c.id}`}
+                className="block bg-panel border border-hairline rounded-xl px-4.5 py-4 text-ink hover:border-accent hover:no-underline"
+              >
+                <h2 className="text-lg font-bold mb-1">{c.title}</h2>
+                {c.subtitle && <p className="text-muted text-sm">{c.subtitle}</p>}
+                <Progress value={dn} total={fl.length} />
+              </Link>
+            );
+          })}
+        </section>
+      )}
     </div>
   );
 }

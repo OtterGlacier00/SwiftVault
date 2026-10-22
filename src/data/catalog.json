@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "courses": [
+    {
+      "id": "widgetkit",
+      "title": "WidgetKit — iOS 18",
+      "modules": [
+        {
+          "id": "getting-started",
+          "title": "Getting Started",
+          "lessons": [
+            {
+              "id": "widgetkit-getting-started-how-to-create-great-widgets",
+              "title": "How to create GREAT Widgets",
+              "type": "video",
+              "src": "/media/widgetkit/Getting%20Started/How%20to%20create%20GREAT%20Widgets.mp4"
+            },
+            {
+              "id": "widgetkit-getting-started-ios-17-18-update-how-it-works-watch-in-full",
+              "title": "iOS 17 & 18 Update How it Works - WATCH IN FULL",
+              "type": "video",
+              "src": "/media/widgetkit/Getting%20Started/iOS%2017%20&%2018%20Update%20How%20it%20Works%20-%20WATCH%20IN%20FULL.mp4"
+            },
+            {
+              "id": "widgetkit-getting-started-what-are-widgets-how-do-they-work",
+              "title": "What are Widgets How do they work",
+              "type": "video",
+              "src": "/media/widgetkit/Getting%20Started/What%20are%20Widgets%20How%20do%20they%20work.mp4",
+              "links": [
+                {
+                  "title": "WidgetKit Documentation",
+                  "url": "https://developer.apple.com/widgets/"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-getting-started-what-s-in-this-course",
+              "title": "What's in this course",
+              "type": "video",
+              "src": "/media/widgetkit/Getting%20Started/What's%20in%20this%20course.mp4"
+            },
+            {
+              "id": "widgetkit-getting-started-what-s-new-in-xcode-15",
+              "title": "What's New in Xcode 15",
+              "type": "video",
+              "src": "/media/widgetkit/Getting%20Started/What's%20New%20in%20Xcode%2015.mp4"
+            }
+          ]
+        }
+      ],
+      "description": "Learn how to create a wide variety of widgets, including interactive, lock screen, controls, and more.",
+      "subtitle": "Widget, lock screen, controlli interattivi e altro",
+      "url": "https://seanallen.teachable.com/p/widgets"
+    },
+    {
+      "id": "ios-dev-launchpad",
+      "title": "iOS Dev Launchpad",
+      "subtitle": "Per principianti assoluti — aggiornato a iOS 15",
+      "description": "60+ videos to introduce you to Swift, Xcode and the world of iOS development.",
+      "url": "https://seanallen.teachable.com/p/ios-dev-launchpad",
+      "modules": []
+    },
+    {
+      "id": "swiftui-fundamentals",
+      "title": "SwiftUI Fundamentals",
+      "subtitle": "Aggiornato a iOS 16",
+      "description": "Build a strong foundation in SwiftUI with a focus on data flow.",
+      "url": "https://seanallen.teachable.com/p/swiftui-fundamentals",
+      "modules": []
+    }
+  ]
+}

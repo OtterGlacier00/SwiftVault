@@ -1,11 +1,12 @@
 {
-  "name": "swifthub",
+  "name": "swiftvault",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "catalog": "node scripts/build-catalog.mjs",
     "lint": "eslint"
   },
   "dependencies": {
