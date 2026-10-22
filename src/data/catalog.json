@@ -140,6 +140,140 @@
               ]
             }
           ]
+        },
+        {
+          "id": "widget-2-repo-watcher-network-call",
+          "title": "Widget #2 - Repo Watcher - Network Call",
+          "lessons": [
+            {
+              "id": "widgetkit-widget-2-repo-watcher-network-call-01-3-variations-of-repo-watcher",
+              "title": "3 Variations of Repo Watcher",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/01-%20%20%20%203%20Variations%20of%20Repo%20Watcher.mp4"
+            },
+            {
+              "id": "widgetkit-widget-2-repo-watcher-network-call-02-the-why-of-a-widget",
+              "title": "The Why of a Widget",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/02-%20%20%20%20The%20Why%20of%20a%20Widget.mp4"
+            },
+            {
+              "id": "widgetkit-widget-2-repo-watcher-network-call-03-medium-widget-ui",
+              "title": "Medium Widget UI",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/03-%20%20%20%20Medium%20Widget%20UI.mp4"
+            },
+            {
+              "id": "widgetkit-widget-2-repo-watcher-network-call-04-create-repository-object",
+              "title": "Create Repository Object",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/04-%20%20%20%20Create%20Repository%20Object.mp4"
+            },
+            {
+              "id": "widgetkit-widget-2-repo-watcher-network-call-05-days-since-last-activity-calculation",
+              "title": "Days Since Last Activity Calculation",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/05-%20%20%20%20Days%20Since%20Last%20Activity%20Calculation.mp4"
+            },
+            {
+              "id": "widgetkit-widget-2-repo-watcher-network-call-06-get-repo-network-call",
+              "title": "Get Repo Network Call",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/06-%20%20%20%20Get%20Repo%20Network%20Call.mp4"
+            },
+            {
+              "id": "widgetkit-widget-2-repo-watcher-network-call-07-get-repo-owner-avatar-network-call",
+              "title": "Get Repo Owner Avatar Network Call",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/07-%20%20%20%20Get%20Repo%20Owner%20Avatar%20Network%20Call.mp4",
+              "links": [
+                {
+                  "title": "Scarica: avatar.jpg",
+                  "url": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/_risorse/avatar.jpg"
+                },
+                {
+                  "title": "Scarica: progetto fino a questo punto (RepoWatcher-1.zip)",
+                  "url": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/_risorse/RepoWatcher-1.zip"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-widget-2-repo-watcher-network-call-08-large-widget-2-repo-ui-model-update",
+              "title": "Large Widget - 2 Repo - UI & Model Update",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/08-%20%20%20%20Large%20Widget%20-%202%20Repo%20-%20UI%20%26%20Model%20Update.mp4",
+              "links": [
+                {
+                  "title": "John Sundell — Codable",
+                  "url": "https://www.swiftbysundell.com/basics/codable/"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-widget-2-repo-watcher-network-call-09-large-widget-2-repo-network-call-refactor",
+              "title": "Large Widget - 2 Repo - Network Call & Refactor",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/09-%20%20%20%20Large%20Widget%20-%202%20Repo%20-%20Network%20Call%20%26%20Refactor.mp4"
+            },
+            {
+              "id": "widgetkit-widget-2-repo-watcher-network-call-10-contributors-widget-bundle-setup",
+              "title": "Contributors - Widget Bundle Setup",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/10-%20%20%20%20Contributors%20-%20Widget%20Bundle%20Setup.mp4"
+            },
+            {
+              "id": "widgetkit-widget-2-repo-watcher-network-call-11-contributors-ui",
+              "title": "Contributors - UI",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/11-%20%20%20%20Contributors%20-%20UI.mp4"
+            },
+            {
+              "id": "widgetkit-widget-2-repo-watcher-network-call-12-contributors-model",
+              "title": "Contributors - Model",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/12-%20%20%20%20Contributors%20-%20Model.mp4"
+            },
+            {
+              "id": "widgetkit-widget-2-repo-watcher-network-call-13-contributors-putting-it-all-together-network-call",
+              "title": "Contributors - Putting it All Together - Network Call",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/13-%20%20%20%20Contributors%20-%20Putting%20it%20All%20Together%20-%20Network%20Call.mp4",
+              "links": [
+                {
+                  "title": "Scarica: progetto completato fino ad ora (RepoWatcher-2.zip)",
+                  "url": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/_risorse/RepoWatcher-2.zip"
+                },
+                {
+                  "title": "John Sundell — async e concurrent forEach e map",
+                  "url": "https://www.swiftbysundell.com/articles/async-and-concurrent-forEach-and-map/"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-widget-2-repo-watcher-network-call-14-ios-17-content-margins-fix-animations",
+              "title": "iOS 17 Content Margins Fix & Animations",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/14-%20%20%20%20iOS%2017%20Content%20Margins%20Fix%20%26%20Animations.mp4",
+              "links": [
+                {
+                  "title": "Scarica: RepoWatcher-2-iOS17-UI.zip",
+                  "url": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/_risorse/RepoWatcher-2-iOS17-UI.zip"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-widget-2-repo-watcher-network-call-15-ios-18-tinted-home-screen-support-for-images-widgetaccent",
+              "title": "iOS 18 Tinted Home Screen Support for Images - .widgetAccentedRenderingMode()",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/15-%20iOS%2018%20Tinted%20Home%20Screen%20Support%20for%20Images%20-%20.widgetAccentedRenderingMode().mp4",
+              "links": [
+                {
+                  "title": "Scarica: RepoWatcher-2-iOS18-UI.zip",
+                  "url": "/media/widgetkit/Widget%20%232%20-%20Repo%20Watcher%20-%20Network%20Call/_risorse/RepoWatcher-2-iOS18-UI.zip"
+                }
+              ]
+            }
+          ]
         }
       ],
       "description": "Learn how to create a wide variety of widgets, including interactive, lock screen, controls, and more.",
