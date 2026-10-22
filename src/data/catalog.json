@@ -274,6 +274,112 @@
               ]
             }
           ]
+        },
+        {
+          "id": "configuration-intents",
+          "title": "Configuration & Intents",
+          "lessons": [
+            {
+              "id": "widgetkit-configuration-intents-01-what-are-configurations",
+              "title": "What are Configurations",
+              "type": "video",
+              "src": "/media/widgetkit/Configuration%20%26%20Intents/01-%20%20%20%20What%20are%20Configurations.mp4"
+            },
+            {
+              "id": "widgetkit-configuration-intents-02-monthly-widget-intent-definitions-file",
+              "title": "Monthly Widget - Intent Definitions File",
+              "type": "video",
+              "src": "/media/widgetkit/Configuration%20%26%20Intents/02-%20%20%20%20Monthly%20Widget%20-%20Intent%20Definitions%20File.mp4",
+              "links": [
+                {
+                  "title": "Scarica: progetto Monthly fino ad ora (Monthly.zip)",
+                  "url": "/media/widgetkit/Configuration%20%26%20Intents/_risorse/Monthly.zip"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-configuration-intents-03-monthly-widget-working-configuration",
+              "title": "Monthly Widget - Working Configuration",
+              "type": "video",
+              "src": "/media/widgetkit/Configuration%20%26%20Intents/03-%20%20%20%20Monthly%20Widget%20-%20Working%20Configuration.mp4",
+              "links": [
+                {
+                  "title": "Scarica: progetto completato (Monthly-Config.zip)",
+                  "url": "/media/widgetkit/Configuration%20%26%20Intents/_risorse/Monthly-Config.zip"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-configuration-intents-04-ios-17-monthly-widget-configuration-new-app-intents",
+              "title": "iOS 17 Monthly Widget Configuration - New App Intents",
+              "type": "video",
+              "src": "/media/widgetkit/Configuration%20%26%20Intents/04-%20%20%20%20iOS%2017%20Monthly%20Widget%20Configuration%20-%20New%20App%20Intents.mp4",
+              "links": [
+                {
+                  "title": "Scarica: Monthly-iOS17-AppIntent.zip",
+                  "url": "/media/widgetkit/Configuration%20%26%20Intents/_risorse/Monthly-iOS17-AppIntent.zip"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-configuration-intents-05-repo-watcher-creating-list-of-repos-in-app",
+              "title": "Repo Watcher - Creating List of Repos in App",
+              "type": "video",
+              "src": "/media/widgetkit/Configuration%20%26%20Intents/05-%20%20%20%20Repo%20Watcher%20-%20Creating%20List%20of%20Repos%20in%20App.mp4",
+              "links": [
+                {
+                  "title": "Scarica: RepoWatcherAppUI.swift",
+                  "url": "/media/widgetkit/Configuration%20%26%20Intents/_risorse/RepoWatcherAppUI.swift"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-configuration-intents-06-repo-watcher-we-have-a-problem-configurations-family-size",
+              "title": "Repo Watcher - We Have A Problem - Configurations & Family Sizes",
+              "type": "video",
+              "src": "/media/widgetkit/Configuration%20%26%20Intents/06-%20%20%20%20Repo%20Watcher%20-%20We%20Have%20A%20Problem%20-%20Configurations%20%26%20Family%20Sizes.mp4"
+            },
+            {
+              "id": "widgetkit-configuration-intents-07-repo-watcher-dynamic-options-intent",
+              "title": "Repo Watcher - Dynamic Options Intent",
+              "type": "video",
+              "src": "/media/widgetkit/Configuration%20%26%20Intents/07-%20%20%20%20Repo%20Watcher%20-%20Dynamic%20Options%20Intent.mp4",
+              "links": [
+                {
+                  "title": "WWDC 2020 — Add configuration and intelligence to your widgets",
+                  "url": "https://developer.apple.com/videos/play/wwdc2020/10194/"
+                },
+                {
+                  "title": "Apple — Making a Configurable Widget",
+                  "url": "https://developer.apple.com/documentation/widgetkit/making-a-configurable-widget"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-configuration-intents-08-repo-watcher-dynamic-options-intent-part-2",
+              "title": "Repo Watcher - Dynamic Options Intent - Part 2",
+              "type": "video",
+              "src": "/media/widgetkit/Configuration%20%26%20Intents/08-%20%20%20%20Repo%20Watcher%20-%20Dynamic%20Options%20Intent%20-%20Part%202.mp4",
+              "links": [
+                {
+                  "title": "Scarica: RepoWatcher-Config.zip",
+                  "url": "/media/widgetkit/Configuration%20%26%20Intents/_risorse/RepoWatcher-Config.zip"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-configuration-intents-09-ios-17-repo-watcher-configuration-new-app-intents-best-pr",
+              "title": "iOS 17 Repo Watcher Configuration - New App Intents & Best Practice Update",
+              "type": "video",
+              "src": "/media/widgetkit/Configuration%20%26%20Intents/09-%20%20%20%20iOS%2017%20Repo%20Watcher%20Configuration%20-%20New%20App%20Intents%20%26%20Best%20Practice%20Update.mp4",
+              "links": [
+                {
+                  "title": "Scarica: RepoWatcher-iOS17-Intent.zip",
+                  "url": "/media/widgetkit/Configuration%20%26%20Intents/_risorse/RepoWatcher-iOS17-Intent.zip"
+                }
+              ]
+            }
+          ]
         }
       ],
       "description": "Learn how to create a wide variety of widgets, including interactive, lock screen, controls, and more.",
