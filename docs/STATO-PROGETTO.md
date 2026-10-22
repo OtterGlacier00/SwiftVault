@@ -70,6 +70,11 @@ Workers ufficiale, SSR nativo sul runtime).
 - Media su R2 comunque inevitabile su CF (Pages: 20k file / ~25 MiB per file)
 - Auth alternativa con dominio custom su CF (dominio a pagamento): CF Access
   gratis fino a 50 utenti — da valutare solo allora
+- **vinext SCARTATA** (feb 2026, v1.0 set 2026): "reimplementazione AI di Next
+  su Vite" (1 ingegnere, 1 settimana) — stesso problema di OpenNext (codebase
+  che vive in un layer non-Next + Next che rincorre), supporto a lungo termine
+  non impegnato e 2 pivot CF su Next-on-Workers in 12 mesi. Non è il ponte:
+  è un clone sperimentale. Decisione utente, definitiva.
 
 > Rimane il piano A: Vercel + il Next attuale, già testato. Il piano B è
 >_documentato prima di servire_, così non si decide sotto pressione.
