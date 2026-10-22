@@ -104,12 +104,15 @@ for (const d of files) {
     title: prettyTitle(lessonName),
     type,
     src,
+    _key: relPosix(d),
   });
 }
 
-// ordine naturale dentro ogni modulo ("lezione 2" prima di "lezione 10")
+// ordine "naturale" col nome file ("02 - x" prima di "10 - x"):
+// così prev/next e progressi seguono l'ordine didattico originale
 for (const m of modules.values()) {
-  m.lessons.sort((a, b) => a.title.localeCompare(b.title, undefined, { numeric: true, sensitivity: "base" }));
+  m.lessons.sort((a, b) => a._key.localeCompare(b._key, undefined, { numeric: true, sensitivity: "base" }));
+  m.lessons.forEach((l) => delete l._key);
 }
 
 const generatedModules = [...modules.values()];
@@ -120,23 +123,40 @@ const catalog = JSON.parse(readFileSync(catalogPath, "utf8"));
 const idx = catalog.courses.findIndex((c) => c.id === courseId);
 const oldIdx = idx !== -1 ? catalog.courses[idx] : null;
 
-// Preserva i "links" aggiunti a mano alle lezioni (chiave: lesson id)
+// Preserva i "links" aggiunti a mano alle lezioni. La chiave è
+// "moduloId:titolo pulito" (e non l'id): così sopravvive ai rinomina file
+// (01-nome, 02-nome...) che cambiano l'id ma non il titolo.
 const oldLinks = new Map();
 for (const m of oldIdx?.modules ?? []) {
   for (const l of m.lessons) {
-    if (l.links?.length) oldLinks.set(l.id, l.links);
+    if (l.links?.length) oldLinks.set(`${m.id}:${l.title}`, l.links);
   }
 }
-for (const m of generatedModules) {
+
+/**
+ * Merge dei moduli: quelli generati sostituiscono i corrispondenti (stesso id)
+ * e vengono aggiunti se nuovi. Con --replace si sostituisce TUTTO il corso
+ * (comodo se vuoi rimuovere a mano da catalog.json i moduli desueti).
+ */
+let modulesOut;
+if (process.argv.includes("--replace")) {
+  modulesOut = generatedModules;
+} else {
+  const byId = new Map([...(oldIdx?.modules ?? [])].map((m) => [m.id, m]));
+  for (const g of generatedModules) byId.set(g.id, g);
+  modulesOut = [...byId.values()];
+}
+
+for (const m of modulesOut) {
   for (const l of m.lessons) {
-    if (oldLinks.has(l.id)) l.links = oldLinks.get(l.id);
+    if (oldLinks.has(`${m.id}:${l.title}`)) l.links = oldLinks.get(`${m.id}:${l.title}`);
   }
 }
 
 const generated = {
   id: courseId,
   title: idx !== -1 ? catalog.courses[idx].title : courseId,
-  modules: generatedModules,
+  modules: modulesOut,
 };
 const old = oldIdx;
 generated.description = old?.description;
@@ -148,6 +168,6 @@ else catalog.courses.push(generated);
 
 writeFileSync(catalogPath, JSON.stringify(catalog, null, 2) + "\n");
 
-const lessonCount = generatedModules.reduce((n, m) => n + m.lessons.length, 0);
-console.log(`✔ ${courseId}: ${generatedModules.length} moduli, ${lessonCount} lezioni aggiunte in data/catalog.json`);
+const lessonCount = modulesOut.reduce((n, m) => n + m.lessons.length, 0);
+console.log(`✔ ${courseId}: ora ${modulesOut.length} moduli, ${lessonCount} lezioni (merge). Generati ora: ${generatedModules.length} moduli da ${folder}`);
 if (!base) console.log("⚠ Nota: nessun --base: gli src dei media sono vuoti, riempi l'URL a mano o ritenta con --base.");
