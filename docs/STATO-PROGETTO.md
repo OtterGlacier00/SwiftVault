@@ -54,6 +54,26 @@ Attuale ~1.5 GB → quando superiamo comodamente 3–4 GB (o push lenti):
    → accettare o passare a domain privato+token; da decidere eventualmente:
    le alternative private costo $ sono state escluse).
 
+## Piano B: tutto-Cloudflare (con TanStack Start)
+
+Regola decisa: **se si va di Cloudflare per l'host del sito, NON con Next+OpenNext**
+(adapter che emula Node su Workers — layer di più, punti deboli su streaming/
+cacheComponents/middleware). Si migra a **TanStack Start** (preset Cloudflare
+Workers ufficiale, SSR nativo sul runtime).
+
+- Trigger: quando i media vanno su R2 (e comunque dopo che i 2 corsi sono
+  completi e deployati), eventuale test A/B su workers.dev
+- Cosa si ricicla: `catalog.json` e gli script, `VideoPlayer`/resume/progressi
+  (localStorage = client-side, identico), Tailwind 4, componenti UI
+- Cosa si riscrive: le route App Router → TanStack Router (file-based),
+  `proxy.ts` → middleware lato Worker (Basic Auth stessa logica)
+- Media su R2 comunque inevitabile su CF (Pages: 20k file / ~25 MiB per file)
+- Auth alternativa con dominio custom su CF (dominio a pagamento): CF Access
+  gratis fino a 50 utenti — da valutare solo allora
+
+> Rimane il piano A: Vercel + il Next attuale, già testato. Il piano B è
+>_documentato prima di servire_, così non si decide sotto pressione.
+
 ## Deploy (da fare: non ancora fatto)
 
 1. `git remote add origin git@github.com:<user>/swiftvault.git` → push (privato)
