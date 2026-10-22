@@ -181,10 +181,18 @@ function LessonBody({
           <ul className="list-none p-0 m-0">
             {lesson.links.map((l) => (
               <li key={l.url} className="py-1.5 border-b border-hairline">
-                <a href={l.url} target="_blank" rel="noreferrer" className="text-accent">
-                  {l.title} ↗
-                </a>
-                <span className="text-muted text-xs ml-2">{l.url}</span>
+                {l.url.startsWith("/") ? (
+                  <a href={l.url} download className="text-accent">
+                    {l.title} ⬇
+                  </a>
+                ) : (
+                  <>
+                    <a href={l.url} target="_blank" rel="noreferrer" className="text-accent">
+                      {l.title} ↗
+                    </a>
+                    <span className="text-muted text-xs ml-2">{l.url}</span>
+                  </>
+                )}
               </li>
             ))}
           </ul>

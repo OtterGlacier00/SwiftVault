@@ -73,7 +73,13 @@
               "id": "widgetkit-widget-1-monthly-theme-widget-02-widget-fundamentals-timeline-entry-snapshot-etc",
               "title": "Widget Fundamentals - Timeline, Entry, Snapshot, etc...",
               "type": "video",
-              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/02-%20%20%20Widget%20Fundamentals%20-%20Timeline%2C%20Entry%2C%20Snapshot%2C%20etc....mp4"
+              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/02-%20%20%20Widget%20Fundamentals%20-%20Timeline%2C%20Entry%2C%20Snapshot%2C%20etc....mp4",
+              "links": [
+                {
+                  "title": "Meet WidgetKit — WWDC 2020",
+                  "url": "https://developer.apple.com/videos/play/wwdc2020/10028/"
+                }
+              ]
             },
             {
               "id": "widgetkit-widget-1-monthly-theme-widget-03-build-our-monthly-widget",
@@ -85,55 +91,53 @@
               "id": "widgetkit-widget-1-monthly-theme-widget-04-dynamic-months",
               "title": "Dynamic Months",
               "type": "video",
-              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/04-%20%20%20Dynamic%20Months.mp4"
+              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/04-%20%20%20Dynamic%20Months.mp4",
+              "links": [
+                {
+                  "title": "Scarica: copyandpaste.swift",
+                  "url": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/_risorse/CopyAndPaste.swift"
+                }
+              ]
             },
             {
               "id": "widgetkit-widget-1-monthly-theme-widget-05-ios-17-standby-ipad-lock-screen-disfavoredlocations-timel",
               "title": "iOS 17 StandBy, iPad Lock Screen, disFavoredLocations, Timeline Previews & Animations",
               "type": "video",
-              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/05-%20iOS%2017%20StandBy%2C%20iPad%20Lock%20Screen%2C%20disFavoredLocations%2C%20Timeline%20Previews%20%26%20Animations.mp4"
+              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/05-%20iOS%2017%20StandBy%2C%20iPad%20Lock%20Screen%2C%20disFavoredLocations%2C%20Timeline%20Previews%20%26%20Animations.mp4",
+              "links": [
+                {
+                  "title": "Scarica: progetto di partenza (Monthly.zip)",
+                  "url": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/_risorse/Monthly.zip"
+                },
+                {
+                  "title": "Scarica: codice lato completato (Monthly-17-UI.zip)",
+                  "url": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/_risorse/Monthly-17-UI.zip"
+                }
+              ]
             },
             {
               "id": "widgetkit-widget-1-monthly-theme-widget-06-ios-18-tinted-home-screen-support-widgetaccentable",
               "title": "iOS 18 Tinted Home Screen Support - .widgetAccentable()",
               "type": "video",
-              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/06-%20%20%20iOS%2018%20Tinted%20Home%20Screen%20Support%20-%20.widgetAccentable().mp4"
+              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/06-%20%20%20iOS%2018%20Tinted%20Home%20Screen%20Support%20-%20.widgetAccentable().mp4",
+              "links": [
+                {
+                  "title": "Scarica: Monthly-18-UI.zip",
+                  "url": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/_risorse/Monthly-18-UI.zip"
+                }
+              ]
             },
             {
               "id": "widgetkit-widget-1-monthly-theme-widget-07-expand-on-our-project",
               "title": "Expand on our project",
               "type": "video",
-              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/07-%20%20%20Expand%20on%20our%20project.mp4"
-            },
-            {
-              "id": "widgetkit-widget-1-monthly-theme-widget-copyandpaste",
-              "title": "CopyAndPaste",
-              "type": "file",
-              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/CopyAndPaste.swift"
-            },
-            {
-              "id": "widgetkit-widget-1-monthly-theme-widget-links-and-file-to-download",
-              "title": "links and file to download",
-              "type": "file",
-              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/links%20and%20file%20to%20download.txt"
-            },
-            {
-              "id": "widgetkit-widget-1-monthly-theme-widget-monthly-17-ui",
-              "title": "Monthly-17-UI",
-              "type": "file",
-              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/Monthly-17-UI.zip"
-            },
-            {
-              "id": "widgetkit-widget-1-monthly-theme-widget-monthly-18-ui",
-              "title": "Monthly-18-UI",
-              "type": "file",
-              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/Monthly-18-UI.zip"
-            },
-            {
-              "id": "widgetkit-widget-1-monthly-theme-widget-monthly",
-              "title": "Monthly",
-              "type": "file",
-              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/Monthly.zip"
+              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/07-%20%20%20Expand%20on%20our%20project.mp4",
+              "links": [
+                {
+                  "title": "Dribbble (ispirazioni per il widget)",
+                  "url": "https://dribbble.com/"
+                }
+              ]
             }
           ]
         }

@@ -75,7 +75,11 @@ const prettyTitle = (stem) => stem.replace(/^\d+\s*[-–—_.]*\s*/, "").trim() 
 const files = readdirSync(folder, { withFileTypes: true, recursive: true })
   .filter((d) => d.isFile())
   .filter((d) => !SKIP_EXT.has(extname(d.name).toLowerCase()))
-  .filter((d) => d.name !== ".DS_Store" && !d.name.startsWith("."));
+  .filter((d) => d.name !== ".DS_Store" && !d.name.startsWith("."))
+  // Convenzione: le cartelle che iniziano con "_" contengono asset RISORSE
+  // (zip di progetto, swift, ecc.) invocate dalle lezioni tramite "links",
+  // non sono lezioni e non finiscono nel catalogo.
+  .filter((d) => !relative(folder, d.parentPath).split(sep).some((s) => s.startsWith("_")));
 
 if (files.length === 0) {
   console.error("Nessun file trovato nella cartella indicata.");
