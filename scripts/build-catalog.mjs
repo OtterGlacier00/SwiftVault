@@ -84,6 +84,10 @@ if (files.length === 0) {
 
 const relPosix = (d) => relative(folder, d.parentPath).split(sep).join("/") + "/" + d.name;
 
+/* URL sicuro: ogni segmento del percorso via encodeURIComponent ("#" e spazi
+   compresi), i "/" reali restano separatori. */
+const relUrl = (d) => relPosix(d).split("/").map(encodeURIComponent).join("/");
+
 const modules = new Map();
 for (const d of files) {
   const rel = relative(folder, d.parentPath);
@@ -97,7 +101,7 @@ for (const d of files) {
   const ext = extname(d.name).toLowerCase();
   const lessonName = basename(d.name, extname(d.name));
   const type = VIDEO_EXT.has(ext) ? "video" : PDF_EXT.has(ext) ? "pdf" : "file";
-  const src = base ? `${base.replace(/\/+$/, "")}/${encodeURI(relPosix(d))}` : "";
+  const src = base ? `${base.replace(/\/+$/, "")}/${relUrl(d)}` : "";
 
   modules.get(moduleId).lessons.push({
     id: `${courseId}-${moduleId}-${slugify(lessonName) || "lesson"}`,

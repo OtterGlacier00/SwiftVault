@@ -31,19 +31,109 @@
               "id": "widgetkit-getting-started-03-how-to-create-great-widgets",
               "title": "How to create GREAT Widgets",
               "type": "video",
-              "src": "/media/widgetkit/Getting%20Started/03%20-%20How%20to%20create%20GREAT%20Widgets.mp4"
+              "src": "/media/widgetkit/Getting%20Started/03%20-%20How%20to%20create%20GREAT%20Widgets.mp4",
+              "links": [
+                {
+                  "title": "Widgets - Human Interface Guidelines:",
+                  "url": "https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets/"
+                }
+              ]
             },
             {
               "id": "widgetkit-getting-started-04-ios-17-18-update-how-it-works-watch-in-full",
               "title": "iOS 17 & 18 Update How it Works - WATCH IN FULL",
               "type": "video",
-              "src": "/media/widgetkit/Getting%20Started/04%20-%20iOS%2017%20&%2018%20Update%20How%20it%20Works%20-%20WATCH%20IN%20FULL.mp4"
+              "src": "/media/widgetkit/Getting%20Started/04%20-%20iOS%2017%20%26%2018%20Update%20How%20it%20Works%20-%20WATCH%20IN%20FULL.mp4"
             },
             {
               "id": "widgetkit-getting-started-05-what-s-new-in-xcode-15",
               "title": "What's New in Xcode 15",
               "type": "video",
-              "src": "/media/widgetkit/Getting%20Started/05%20-%20What's%20New%20in%20Xcode%2015.mp4"
+              "src": "/media/widgetkit/Getting%20Started/05%20-%20What's%20New%20in%20Xcode%2015.mp4",
+              "links": [
+                {
+                  "title": "What's new in Xcode 15 WWDC 2023",
+                  "url": "https://developer.apple.com/videos/play/wwdc2023/10165"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "widget-1-monthly-theme-widget",
+          "title": "Widget #1 - Monthly Theme Widget",
+          "lessons": [
+            {
+              "id": "widgetkit-widget-1-monthly-theme-widget-01-project-setup",
+              "title": "Project Setup",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/01-Project%20Setup.mp4"
+            },
+            {
+              "id": "widgetkit-widget-1-monthly-theme-widget-02-widget-fundamentals-timeline-entry-snapshot-etc",
+              "title": "Widget Fundamentals - Timeline, Entry, Snapshot, etc...",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/02-%20%20%20Widget%20Fundamentals%20-%20Timeline%2C%20Entry%2C%20Snapshot%2C%20etc....mp4"
+            },
+            {
+              "id": "widgetkit-widget-1-monthly-theme-widget-03-build-our-monthly-widget",
+              "title": "Build our Monthly Widget",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/03-%20%20%20Build%20our%20Monthly%20Widget.mp4"
+            },
+            {
+              "id": "widgetkit-widget-1-monthly-theme-widget-04-dynamic-months",
+              "title": "Dynamic Months",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/04-%20%20%20Dynamic%20Months.mp4"
+            },
+            {
+              "id": "widgetkit-widget-1-monthly-theme-widget-05-ios-17-standby-ipad-lock-screen-disfavoredlocations-timel",
+              "title": "iOS 17 StandBy, iPad Lock Screen, disFavoredLocations, Timeline Previews & Animations",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/05-%20iOS%2017%20StandBy%2C%20iPad%20Lock%20Screen%2C%20disFavoredLocations%2C%20Timeline%20Previews%20%26%20Animations.mp4"
+            },
+            {
+              "id": "widgetkit-widget-1-monthly-theme-widget-06-ios-18-tinted-home-screen-support-widgetaccentable",
+              "title": "iOS 18 Tinted Home Screen Support - .widgetAccentable()",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/06-%20%20%20iOS%2018%20Tinted%20Home%20Screen%20Support%20-%20.widgetAccentable().mp4"
+            },
+            {
+              "id": "widgetkit-widget-1-monthly-theme-widget-07-expand-on-our-project",
+              "title": "Expand on our project",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/07-%20%20%20Expand%20on%20our%20project.mp4"
+            },
+            {
+              "id": "widgetkit-widget-1-monthly-theme-widget-copyandpaste",
+              "title": "CopyAndPaste",
+              "type": "file",
+              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/CopyAndPaste.swift"
+            },
+            {
+              "id": "widgetkit-widget-1-monthly-theme-widget-links-and-file-to-download",
+              "title": "links and file to download",
+              "type": "file",
+              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/links%20and%20file%20to%20download.txt"
+            },
+            {
+              "id": "widgetkit-widget-1-monthly-theme-widget-monthly-17-ui",
+              "title": "Monthly-17-UI",
+              "type": "file",
+              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/Monthly-17-UI.zip"
+            },
+            {
+              "id": "widgetkit-widget-1-monthly-theme-widget-monthly-18-ui",
+              "title": "Monthly-18-UI",
+              "type": "file",
+              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/Monthly-18-UI.zip"
+            },
+            {
+              "id": "widgetkit-widget-1-monthly-theme-widget-monthly",
+              "title": "Monthly",
+              "type": "file",
+              "src": "/media/widgetkit/Widget%20%231%20-%20Monthly%20Theme%20Widget/Monthly.zip"
             }
           ]
         }
