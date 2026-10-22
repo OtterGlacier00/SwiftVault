@@ -5,6 +5,10 @@ Un'app web **privata e gratuita** che sostituisce la scuola Teachable di Sean Al
 
 Scaffold di partenza: `create-next-app` (Next.js 16, Tailwind CSS 4, TypeScript, pnpm).
 
+📚 **Documentazione operativa** in [`docs/`](./docs):
+- [`docs/STATO-PROGETTO.md`](./docs/STATO-PROGETTO.md) — stato, media, deploy, migrazione R2
+- [`docs/GUIDA-OPERATIVA.md`](./docs/GUIDA-OPERATIVA.md) — come aggiungere un modulo, passo-passo
+
 ## Cosa sa fare
 
 - 📚 Corsi come su Teachable: moduli → lezioni
