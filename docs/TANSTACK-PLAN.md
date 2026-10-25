@@ -67,13 +67,26 @@ futuro tocca solo le componenti UI.
 - **Markdown / Highlight** (vanilla): 🔶 futuro — note in markdown
   renderizzato e snippet di codice evidenziati, valutazione a tempo
 
+## Skills di progetto installate (`.agents/skills/`) — quando entrano in gioco
+
+Regola utente (25/10): usarle tutte durante il percorso TanStack.
+
+| Skill | Quando | Come |
+|---|---|---|
+| **find-skills** | Step 0 migrazione (prima dello scaffold) | cercare nel registry skill utili al port (es. TanStack/Vite/Tailwind); installarle in `.agents/skills/` e aggiornare questa tabella |
+| **frontend-design** | Step 5 componenti (se il port tocca la UI: dashboard/player) | identità visiva durante il porting: tipografia/palette intenzionale, evitare l'aspetto "template default" |
+| **improve-codebase-architecture** | POST-migrazione (dopo la verifica step 7) | scan deepening-opportunities con report HTML: i seam nuovi resi possibili da Router/Store (adapter localStorage, interfacce catalogo). ⚠️ `disable-model-invocation: true` → invocabile solo dall'utente. ⚠️ richiede la skill "codebase-design" (vocabolario): se assente, va installata via **find-skills** |
+
+Calendario: find-skills PRIMA, frontend-design DURANTE, improve-codebase-architecture DOPO.
+
 ## Migrazione Next → Start React (8 step — UNA fase da mezza giornata)
 
 Media in volo non bloccano: `public/media` è **untracked** e `public/` funziona
 uguale con Vite. Ordine previsto:
 
 1. **Media finiti e committati** (swap AV1 → commit launchpad/swiftui →
-   catalogo): così la migrazione parte da un albero pulito e tematico
+   catalogo): così la migrazione parte da un albero pulito e tematico.
+   Subito dopo: **find-skills** a caccia di skill utili (step 0)
 2. **Scaffold**: `pnpm add @tanstack/react-start @tanstack/react-router
    nitro @vitejs/plugin-react`; `vite.config.ts`:
    `plugins: [tanstackStart(), nitro(), viteReact()]` +
@@ -91,7 +104,10 @@ uguale con Vite. Ordine previsto:
 6. **Rimozione Next**: disinstallare `next`, cancellare `next.config.ts`,
    `src/app/`, `.next`; reinstall node_modules
 7. **Verifica locale**: `pnpm build` + `vite preview` → player OK, range
-   request su `/media/*.mp4` OK, 401 senza auth, ricerca e resume OK
+   request su `/media/*.mp4` OK, 401 senza auth, ricerca e resume OK.
+   A verifica verde: **frontend-design** SOLO se la UI merita un ritocco
+   durante il port; **improve-codebase-architecture** post-migrazione
+   (l'utente lo invoca a mano)
 8. **Deploy Vercel** (o prima push e poi import): env vars, test post-deploy
    come da `STATO-PROGETTO` §Deploy
 
