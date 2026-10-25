@@ -1,7 +1,7 @@
 # STATO PROGETTO — SwiftVault
 
 > Documento di handoff: da leggere a inizio sessione (umano o agente).
-> Ultimo aggiornamento: 24 ottobre 2026.
+> Ultimo aggiornamento: 25 ottobre 2026.
 
 ## Unicorn essenziale](mission)
 
@@ -32,14 +32,38 @@ valutate e scartate: Content ID/strike e lock-in).
 - Funzioni app: player con resume (localStorage), progressi, note per lezione,
   ricerca, PDF, download interni (`/media/...` con download attr), link esterni.
 
-## Stato media (al 24 ott)
+## Stato media (al 25 ott) — ⚠️ bloccati su GitHub per 8 file
 
-- WidgetKit: 4 moduli, 36 lezioni in repo (~1.5 GB)
+- **WidgetKit: 8 moduli, 63 lezioni** (~3,5 GB totali sotto public/media)
   - Getting Started (5), Monthly Theme (7), Repo Watcher/Network (15),
     Configuration & Intents (9)
-- iOS Dev Launchpad: curriculum vuoto (scaricabile — 60+ video)
-- SwiftUI Fundamentals: curriculum vuoto (scaricabile)
-- Tutti i file sono rinominati con prefissi `NN - ` per l'ordine didattico.
+  - **Live Activities & Dynamic Island (6)** — zips BasketballSim starter/complete/iOS17
+  - **Lock Screen Widgets (2)** — zip + nota padding iOS 17 (txt in _risorse)
+  - **Widget #3 Swift Calendar (13)** — Date+Ext.swift, zip SwiftCal×5,
+    WWDC SwiftData ×5, nota zip SwiftCal-iOS18-UI mancante (coperto dallo zip
+    "Curso completo" aggiornato iOS 26, agganciato sia a lez 12 che a lez 1
+    di Getting Started)
+  - **WWDC 2023 (6, solo link esterni Apple, tipo "link")** — modulo manuale
+    senza media; lez 04/05 di SwiftCal eranorand nombre "(parte 2)" nel file
+- **Nuovo corso `how-i-became-an-ios-dev`**: ebook PDF di Sean (15 MB, type "pdf",
+  viewer integrato via iframe) in modulo "Il Libro"
+- iOS Dev Launchpad + SwiftUI Fundamentals: ancora da scaricare
+
+**BLOCCO HARD: 8 video nuovi superano il limite di GitHub (100 MiB)** (max 139,7):
+quella parte NON è commitabile/pushabile così com'è. Da decidere una di due
+strade (sotto: R2 ovvero re-encode AV1 dei soli over-limit). Fin ad allora i
+media nuovi restano NON-commitati (in working tree: visibili in dev, invisibili
+a git).
+
+## Le due strade per il blocco GitHub (verdetto da prendere)
+
+- **A. R2 ORA** (consigliata): tutti i media fuori repo (git filter-repo sui
+  vecchi blob pre-push, repo solo-codice), catalog --base → URL r2.dev. 10 GB
+  free, egress 0. Richiede: account CF + bucket creati da te (UI browser).
+- **B. AV1 re-encode SOLO degli 8 file >100 MiB**: si entra sotto 100 MiB ognuno,
+  il resto del repo resta com'è (totale ~3,5 GB). ffmpeg CRF ~32: test di
+  qualità su 1 video prima di lanciare il lotto. Zero account esterni, perdita
+  di qualità (bassa su screencast) definitiva.
 
 ## Limite pratico e il piano "quando si gonfia"
 

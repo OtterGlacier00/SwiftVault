@@ -13,7 +13,13 @@
               "id": "widgetkit-getting-started-01-what-s-in-this-course",
               "title": "What's in this course",
               "type": "video",
-              "src": "/media/widgetkit/Getting%20Started/01%20-%20What's%20in%20this%20course.mp4"
+              "src": "/media/widgetkit/Getting%20Started/01%20-%20What's%20in%20this%20course.mp4",
+              "links": [
+                {
+                  "title": "Scarica: WidgetKit Course Projects.zip (codice aggiornato iOS 26/Liquid Glass di tutti i progetti)",
+                  "url": "/media/widgetkit/_risorse/WidgetKit%20Course%20Projects.zip"
+                }
+              ]
             },
             {
               "id": "widgetkit-getting-started-02-what-are-widgets-how-do-they-work",
@@ -380,6 +386,316 @@
               ]
             }
           ]
+        },
+        {
+          "id": "live-activities-dynamic-island",
+          "title": "Live Activities & Dynamic Island",
+          "lessons": [
+            {
+              "id": "widgetkit-live-activities-dynamic-island-01-intro-starter-project-walkthrough",
+              "title": "Intro & Starter Project Walkthrough",
+              "type": "video",
+              "src": "/media/widgetkit/Live%20Activities%20%26%20Dynamic%20Island/01-%20%20%20Intro%20%26%20Starter%20Project%20Walkthrough.mp4",
+              "links": [
+                {
+                  "title": "Scarica: progetto starter (BasketballSim-starter.zip)",
+                  "url": "/media/widgetkit/Live%2520Activities%2520%2526%2520Dynamic%2520Island/_risorse/BasketballSim-starter.zip"
+                },
+                {
+                  "title": "Apple — Displaying live data with Live Activities",
+                  "url": "https://developer.apple.com/documentation/activitykit/displaying-live-data-with-live-activities"
+                },
+                {
+                  "title": "Apple — Live Activities, Human Interface Guidelines",
+                  "url": "https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/live-activities"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-live-activities-dynamic-island-02-initial-setup-how-live-activities-work",
+              "title": "Initial Setup & How Live Activities Work",
+              "type": "video",
+              "src": "/media/widgetkit/Live%20Activities%20%26%20Dynamic%20Island/02-%20%20%20Initial%20Setup%20%26%20How%20Live%20Activities%20Work.mp4",
+              "links": [
+                {
+                  "title": "Scarica: progetto starter (BasketballSim-starter.zip)",
+                  "url": "/media/widgetkit/Live%2520Activities%2520%2526%2520Dynamic%2520Island/_risorse/BasketballSim-starter.zip"
+                },
+                {
+                  "title": "Apple — Displaying live data with Live Activities",
+                  "url": "https://developer.apple.com/documentation/activitykit/displaying-live-data-with-live-activities"
+                },
+                {
+                  "title": "Apple — Live Activities, Human Interface Guidelines",
+                  "url": "https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/live-activities"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-live-activities-dynamic-island-03-user-interface-live-activity-dynamic-island",
+              "title": "User Interface - Live Activity & Dynamic Island",
+              "type": "video",
+              "src": "/media/widgetkit/Live%20Activities%20%26%20Dynamic%20Island/03-%20%20%20User%20Interface%20-%20Live%20Activity%20%26%20Dynamic%20Island.mp4"
+            },
+            {
+              "id": "widgetkit-live-activities-dynamic-island-04-launching-a-live-activity-connecting-the-ui",
+              "title": "Launching a Live Activity & Connecting the UI",
+              "type": "video",
+              "src": "/media/widgetkit/Live%20Activities%20%26%20Dynamic%20Island/04-%20%20%20Launching%20a%20Live%20Activity%20%26%20Connecting%20the%20UI.mp4",
+              "links": [
+                {
+                  "title": "Scarica: progetto completato (BasketballSim-completed.zip)",
+                  "url": "/media/widgetkit/Live%2520Activities%2520%2526%2520Dynamic%2520Island/_risorse/BasketballSim-completed.zip"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-live-activities-dynamic-island-05-background-updates-explained",
+              "title": "Background Updates Explained",
+              "type": "video",
+              "src": "/media/widgetkit/Live%20Activities%20%26%20Dynamic%20Island/05-%20%20%20Background%20Updates%20Explained.mp4",
+              "links": [
+                {
+                  "title": "Apple — Live Activity con remote push notifications",
+                  "url": "https://developer.apple.com/documentation/activitykit/update-and-end-your-live-activity-with-remote-push-notifications"
+                },
+                {
+                  "title": "Apple — Choosing Background Strategies for Your App",
+                  "url": "https://developer.apple.com/documentation/backgroundtasks/choosing_background_strategies_for_your_app"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-live-activities-dynamic-island-06-ios-17-live-activities-in-standby-number-animations",
+              "title": "iOS 17 Live Activities in StandBy & Number Animations",
+              "type": "video",
+              "src": "/media/widgetkit/Live%20Activities%20%26%20Dynamic%20Island/06-%20%20%20iOS%2017%20Live%20Activities%20in%20StandBy%20%26%20Number%20Animations.mp4",
+              "links": [
+                {
+                  "title": "Scarica: progetto iOS 17 (BasketballSim-iOS17.zip)",
+                  "url": "/media/widgetkit/Live%2520Activities%2520%2526%2520Dynamic%2520Island/_risorse/BasketballSim-iOS17.zip"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lock-screen-widgets",
+          "title": "Lock Screen Widgets",
+          "lessons": [
+            {
+              "id": "widgetkit-lock-screen-widgets-01-introduction-repo-watcher-lock-screen-widgets",
+              "title": "Introduction & Repo Watcher Lock Screen Widgets",
+              "type": "video",
+              "src": "/media/widgetkit/Lock%20Screen%20Widgets/01-%20%20%20Introduction%20%26%20Repo%20Watcher%20Lock%20Screen%20Widgets.mp4"
+            },
+            {
+              "id": "widgetkit-lock-screen-widgets-02-swift-cal-lock-screen-widgets",
+              "title": "Swift Cal Lock Screen Widgets",
+              "type": "video",
+              "src": "/media/widgetkit/Lock%20Screen%20Widgets/02-%20%20%20Swift%20Cal%20Lock%20Screen%20Widgets.mp4",
+              "links": [
+                {
+                  "title": "Scarica: progetto (SwiftCal-Lockscreen.zip)",
+                  "url": "/media/widgetkit/Lock%2520Screen%2520Widgets/_risorse/SwiftCal-Lockscreen.zip"
+                },
+                {
+                  "title": "Nota iOS 17: padding del calendario Lock Screen (txt)",
+                  "url": "/media/widgetkit/Lock%2520Screen%2520Widgets/_risorse/iOS%252017%2520SwiftCal%2520Lock%2520Screen%2520Padding.txt"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "widget-3-swift-calendar-core-dataswiftdata",
+          "title": "Widget #3 - Swift Calendar - Core DataSwiftData",
+          "lessons": [
+            {
+              "id": "widgetkit-widget-3-swift-calendar-core-dataswiftdata-01-app-overview-project-core-data-setup",
+              "title": "App Overview - Project & Core Data Setup",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%233%20-%20Swift%20Calendar%20-%20Core%20DataSwiftData/01-%20App%20Overview%20-%20Project%20%26%20Core%20Data%20Setup.mp4",
+              "links": [
+                {
+                  "title": "Scarica: Date+Ext.swift",
+                  "url": "/media/widgetkit/Widget%2520%25233%2520-%2520Swift%2520Calendar%2520-%2520Core%2520DataSwiftData/_risorse/Date%252BExt.swift"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-widget-3-swift-calendar-core-dataswiftdata-02-app-calendar-ui",
+              "title": "App - Calendar UI",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%233%20-%20Swift%20Calendar%20-%20Core%20DataSwiftData/02-App%20-%20Calendar%20UI.mp4"
+            },
+            {
+              "id": "widgetkit-widget-3-swift-calendar-core-dataswiftdata-03-app-date-logic-for-calendar",
+              "title": "App - Date Logic for Calendar",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%233%20-%20Swift%20Calendar%20-%20Core%20DataSwiftData/03-App%20-%20Date%20Logic%20for%20Calendar.mp4"
+            },
+            {
+              "id": "widgetkit-widget-3-swift-calendar-core-dataswiftdata-04-app-streakview-calculation",
+              "title": "App - StreakView & Calculation",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%233%20-%20Swift%20Calendar%20-%20Core%20DataSwiftData/04-%20App%20-%20StreakView%20%26%20Calculation.mp4"
+            },
+            {
+              "id": "widgetkit-widget-3-swift-calendar-core-dataswiftdata-05-app-streakview-calculation-parte-2",
+              "title": "App - StreakView & Calculation (parte 2)",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%233%20-%20Swift%20Calendar%20-%20Core%20DataSwiftData/05-%20App%20-%20StreakView%20%26%20Calculation%20(parte%202).mp4"
+            },
+            {
+              "id": "widgetkit-widget-3-swift-calendar-core-dataswiftdata-06-app-group-core-data-migration",
+              "title": "App Group & Core Data Migration",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%233%20-%20Swift%20Calendar%20-%20Core%20DataSwiftData/06-%20%20%20App%20Group%20%26%20Core%20Data%20Migration.mp4"
+            },
+            {
+              "id": "widgetkit-widget-3-swift-calendar-core-dataswiftdata-07-widget-ui",
+              "title": "Widget - UI",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%233%20-%20Swift%20Calendar%20-%20Core%20DataSwiftData/07-%20%20%20Widget%20-%20UI.mp4"
+            },
+            {
+              "id": "widgetkit-widget-3-swift-calendar-core-dataswiftdata-08-widget-core-data",
+              "title": "Widget - Core Data",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%233%20-%20Swift%20Calendar%20-%20Core%20DataSwiftData/08-%20%20%20Widget%20-%20Core%20Data.mp4"
+            },
+            {
+              "id": "widgetkit-widget-3-swift-calendar-core-dataswiftdata-09-widget-touch-targets-where-to-go-from-here",
+              "title": "Widget - Touch Targets & Where to Go From Here",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%233%20-%20Swift%20Calendar%20-%20Core%20DataSwiftData/09-%20%20%20Widget%20-%20Touch%20Targets%20%26%20Where%20to%20Go%20From%20Here.mp4",
+              "links": [
+                {
+                  "title": "Scarica: SwiftCal.zip",
+                  "url": "/media/widgetkit/Widget%2520%25233%2520-%2520Swift%2520Calendar%2520-%2520Core%2520DataSwiftData/_risorse/SwiftCal.zip"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-widget-3-swift-calendar-core-dataswiftdata-10-ios-17-convert-to-swiftdata",
+              "title": "iOS 17 Convert to SwiftData",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%233%20-%20Swift%20Calendar%20-%20Core%20DataSwiftData/10-%20%20%20iOS%2017%20Convert%20to%20SwiftData.mp4",
+              "links": [
+                {
+                  "title": "Scarica: SwiftCal-iOS17-SwiftData.zip",
+                  "url": "/media/widgetkit/Widget%2520%25233%2520-%2520Swift%2520Calendar%2520-%2520Core%2520DataSwiftData/_risorse/SwiftCal-iOS17-SwiftData.zip"
+                },
+                {
+                  "title": "YouTube — My Intro to SwiftData (video di Sean)",
+                  "url": "https://youtu.be/mvXFGikltPc"
+                },
+                {
+                  "title": "WWDC 2023 — Meet SwiftData",
+                  "url": "https://developer.apple.com/videos/play/wwdc2023/10187/"
+                },
+                {
+                  "title": "WWDC 2023 — Dive Deeper in SwiftData",
+                  "url": "https://developer.apple.com/videos/play/wwdc2023/10196"
+                },
+                {
+                  "title": "WWDC 2023 — Migrate to SwiftData",
+                  "url": "https://developer.apple.com/videos/play/wwdc2023/10189"
+                },
+                {
+                  "title": "WWDC 2023 — Model your schema with SwiftData",
+                  "url": "https://developer.apple.com/videos/play/wwdc2023/10195"
+                },
+                {
+                  "title": "WWDC 2023 — Build an app with SwiftData",
+                  "url": "https://developer.apple.com/videos/play/wwdc2023/10154"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-widget-3-swift-calendar-core-dataswiftdata-11-ios-17-let-s-make-our-widget-interactive",
+              "title": "iOS 17 Let's Make Our Widget Interactive",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%233%20-%20Swift%20Calendar%20-%20Core%20DataSwiftData/11-%20%20%20iOS%2017%20Let's%20Make%20Our%20Widget%20Interactive.mp4",
+              "links": [
+                {
+                  "title": "Scarica: SwiftCal-iOS17-Interactive.zip",
+                  "url": "/media/widgetkit/Widget%2520%25233%2520-%2520Swift%2520Calendar%2520-%2520Core%2520DataSwiftData/_risorse/SwiftCal-iOS17-Interactive.zip"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-widget-3-swift-calendar-core-dataswiftdata-12-ios-18-a-taste-of-swift-6-concurrency-tinted-home-screen-",
+              "title": "iOS 18 A Taste of Swift 6 Concurrency & Tinted Home Screen Support",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%233%20-%20Swift%20Calendar%20-%20Core%20DataSwiftData/12-%20%20%20iOS%2018%20A%20Taste%20of%20Swift%206%20Concurrency%20%26%20Tinted%20Home%20Screen%20Support.mp4",
+              "links": [
+                {
+                  "title": "Scarica: WidgetKit Course Projects.zip — il progetto SwiftCal aggiornato è dentro (lo zip dedicato SwiftCal-iOS18-UI.zip non era nel download)",
+                  "url": "/media/widgetkit/_risorse/WidgetKit%20Course%20Projects.zip"
+                }
+              ]
+            },
+            {
+              "id": "widgetkit-widget-3-swift-calendar-core-dataswiftdata-13-ios-18-control-widget",
+              "title": "iOS 18 Control Widget",
+              "type": "video",
+              "src": "/media/widgetkit/Widget%20%233%20-%20Swift%20Calendar%20-%20Core%20DataSwiftData/13-%20%20%20iOS%2018%20Control%20Widget.mp4",
+              "links": [
+                {
+                  "title": "Scarica: SwiftCal-iOS18-Control.zip",
+                  "url": "/media/widgetkit/Widget%2520%25233%2520-%2520Swift%2520Calendar%2520-%2520Core%2520DataSwiftData/_risorse/SwiftCal-iOS18-Control.zip"
+                },
+                {
+                  "title": "YouTube — WWDC 2024 Control Widgets (video spiegato)",
+                  "url": "https://www.youtube.com/watch?v=7cZb7L2yfZg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wwdc-2023-widget-related-videos",
+          "title": "WWDC 2023 — Widget & Live Activities (da rivedere)",
+          "lessons": [
+            {
+              "id": "widgetkit-wwdc-2023-10027",
+              "title": "Bring widgets to new places",
+              "type": "link",
+              "src": "https://developer.apple.com/videos/play/wwdc2023/10027/"
+            },
+            {
+              "id": "widgetkit-wwdc-2023-10028",
+              "title": "Bring widgets to life",
+              "type": "link",
+              "src": "https://developer.apple.com/videos/play/wwdc2023/10028"
+            },
+            {
+              "id": "widgetkit-wwdc-2023-10103",
+              "title": "Explore enhancements to App Intents",
+              "type": "link",
+              "src": "https://developer.apple.com/videos/play/wwdc2023/10103"
+            },
+            {
+              "id": "widgetkit-wwdc-2023-10184",
+              "title": "Meet ActivityKit",
+              "type": "link",
+              "src": "https://developer.apple.com/videos/play/wwdc2023/10184"
+            },
+            {
+              "id": "widgetkit-wwdc-2023-10194",
+              "title": "Design dynamic Live Activities",
+              "type": "link",
+              "src": "https://developer.apple.com/videos/play/wwdc2023/10194"
+            },
+            {
+              "id": "widgetkit-wwdc-2023-10185",
+              "title": "Update Live Activities with Push Notifications",
+              "type": "link",
+              "src": "https://developer.apple.com/videos/play/wwdc2023/10185"
+            }
+          ]
         }
       ],
       "description": "Learn how to create a wide variety of widgets, including interactive, lock screen, controls, and more.",
@@ -401,6 +717,26 @@
       "description": "Build a strong foundation in SwiftUI with a focus on data flow.",
       "url": "https://seanallen.teachable.com/p/swiftui-fundamentals",
       "modules": []
+    },
+    {
+      "id": "how-i-became-an-ios-dev",
+      "title": "It's Only Crazy Until You Do It — How I Became an iOS Dev",
+      "modules": [
+        {
+          "id": "il-libro",
+          "title": "Il Libro",
+          "lessons": [
+            {
+              "id": "how-i-became-an-ios-dev-il-libro-how-i-became-an-ios-dev",
+              "title": "How I Became an iOS Dev",
+              "type": "pdf",
+              "src": "/media/how-i-became-an-ios-dev/Il%20Libro/How%20I%20Became%20an%20iOS%20Dev.pdf"
+            }
+          ]
+        }
+      ],
+      "subtitle": "L'ebook di Sean Allen (PDF)",
+      "description": "Il libro in cui Sean Allen racconta come è diventato sviluppatore iOS a Apple partendo dal niente. Lettura del PDF integrata nell'app (o download)."
     }
   ]
 }
