@@ -122,13 +122,15 @@ mai Next+OpenNext"). **Ora è incondizionale**: si droppa Next e si migra a
 2. **Repo `swiftvault-media`** (private `OtterGlacier00/swiftvault-media`,
    root = corsi): widgetkit push, poi launchpad e swiftui a fine AV1;
    si aggiungerà come **submodule** in `public/media`
+3. **Repo public già creato dall'utente**: `https://github.com/OtterGlacier00/SwiftVault`
+   (ha un commit iniziale con **LICENSE**: alla prima push merger —
+   `git merge --allow-unrelated-histories origin/main` — per NON perderla)
 3. Vercel: **una o due varianti a scelta durante il port** (tabella
    pro/contro in `TANSTACK-PLAN.md` §Architettura deploy):
    - A: 1 app + `fetch-media.mjs` build-time con `GH_TOKEN` fine-grained
    - B: 2 progetti + URL firmate HMAC (`MEDIA_SIGN_SECRET` x2)
    env sempre: `SITE_USER`, `SITE_PASS`, `SESSION_SECRET` (+ variante)
-   (⚠️ `.env.local` attuale usa le demo `stefy/test`: CAMBIARE prima del deploy)
-4. Test post-deploy: `/` pubblica → login moderno; con login → 200;
+   (⚠️ `.env.local` attuale usa le demo `stefy/test`: CAMBIARE prima del deploy)4. Test post-deploy: `/` pubblica → login moderno; con login → 200;
    media accessibili solo da app autenticata (cookie o URL firmata)
 
 ## Decisione media: AV1 **solo necessari** (25 ott 2026, rivista sera)
@@ -170,7 +172,8 @@ CPU i3-2100: ~75 fps (2,5x realtime) → un file grande ~7-8 min.
       build OK locale
 - [ ] **Split repo**: `swiftvault-media` privato (root = corsi) + **submodule**
       su `public/media` + `git filter-repo` per togliere i media dalla
-      history + repo codice PUBLIC
+      history + push su **github.com/OtterGlacier00/SwiftVault** (public;
+      LICENSE dell'utente da PRESERVARE via merge unrelated-histories)
 - [ ] Push GitHub (repo public — gh già autenticato: OtterGlacier00) +
       deploy Vercel in versione A o B a scelta durante il port
       (⚠️ cambiare password demo `stefy/test` PRIMA del deploy)
