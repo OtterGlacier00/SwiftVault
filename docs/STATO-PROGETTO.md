@@ -91,7 +91,9 @@ Attuale ~1.5 GB → quando superiamo comodamente 3–4 GB (o push lenti):
 Regola decisa: **se si va di Cloudflare per l'host del sito, NON con Next+OpenNext**
 (adapter che emula Node su Workers — layer di più, punti deboli su streaming/
 cacheComponents/middleware). Si migra a **TanStack Start** (preset Cloudflare
-Workers ufficiale, SSR nativo sul runtime).
+Workers ufficiale, SSR nativo sul runtime). Da **1.0 STABILE (13/10/2026)** con
+albero docs parallelo anche per **Solid**: la migrazione è percorsi-due alberi
+primari, non più esperimento. **Piano con paragone React/Solid: `TANSTACK-PLAN.md`.**
 
 - Trigger: quando i media vanno su R2 (e comunque dopo che i 2 corsi sono
   completi e deployati), eventuale test A/B su workers.dev
