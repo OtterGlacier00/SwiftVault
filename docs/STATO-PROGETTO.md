@@ -111,6 +111,22 @@ Workers ufficiale, SSR nativo sul runtime).
    (⚠️ `.env.local` attuale usa le demo `stefy/test`: CAMBIARE prima del deploy)
 3. Test post-deploy: senza login → 401; con → 200; `/media/...` senza login → 401
 
+## Decisione media: AV1 (25 ott 2026)
+
+Scelta utente: **re-encode AV1 su TUTTA la libreria** (non solo gli over-limit),
+**720p · CRF 34 · preset 10 · g=240 · audio copy · faststart**. Misurato su CPU
+i3-2100: ~75 fps (2,5x realtime) → ragionevole per i batch notturni.
+
+- Fase 1 (in corso): i **8 file >100 MiB** → sotto il limite GitHub
+- Fase 2: il resto della libreria con lo stesso profilo (degli originali:
+  esistono nei Downloads per i download recenti; per quelli vecchi anche nel
+  git history prima di eventuali rewrite)
+- Nomi/path IDENTICI → catalogo intoccato; swap dopo verifica <100 MiB
+  (`scripts/av1-swap.ps1`). Test di qualità fatti su 3 clip in
+  `%TEMP%\opencode\av1test\` — l'utente ha scelto il 720p
+- ffmpeg installato via winget (Gyan.FFmpeg, alias in Links; usare percorso
+  esplicito in script). Playback AV1: Chromium/Edge ok, WMP no
+
 ## Cosa fare il prossimo giro
 
 - [ ] Scarica da Teachable: iOS Dev Launchpad + SwiftUI Fundamentals (entro 24/11)
