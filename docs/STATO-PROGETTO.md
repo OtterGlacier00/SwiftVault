@@ -39,10 +39,10 @@ valutate e scartate: Content ID/strike e lock-in).
     Configuration & Intents (9)
   - **Live Activities & Dynamic Island (6)** — zips BasketballSim starter/complete/iOS17
   - **Lock Screen Widgets (2)** — zip + nota padding iOS 17 (txt in _risorse)
-  - **Widget #3 Swift Calendar (13)** — Date+Ext.swift, zip SwiftCal×5,
-    WWDC SwiftData ×5, nota zip SwiftCal-iOS18-UI mancante (coperto dallo zip
-    "Curso completo" aggiornato iOS 26, agganciato sia a lez 12 che a lez 1
-    di Getting Started)
+  - **Widget #3 Swift Calendar (13)** — Date+Ext.swift, zip SwiftCal×6
+    (incl. SwiftCal-iOS18-UI.zip arrivato in ritardo, agganciato a lez 12),
+    WWDC SwiftData ×5; lo zip "corso completo" aggiornato iOS 26 resta
+    agganciato alla lez 1 di Getting Started
   - **WWDC 2023 (6, solo link esterni Apple, tipo "link")** — modulo manuale
     senza media; lez 04/05 di SwiftCal erano titoli gemelli: la 05 rinominata
     "(parte 2)" nel file
