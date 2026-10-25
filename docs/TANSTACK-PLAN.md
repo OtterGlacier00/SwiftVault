@@ -2,47 +2,80 @@
 
 > Ricerca fatta su tanstack.com (Start **1.0 stabile** dal 13/10/2026).
 > **DECISIONE (25/10 sera): drop di Next** — Vercel è Gold partner TanStack e
-> percorso deploy **documentato ufficialmente** nelle guide Start → si migra a
-> **TanStack Start in React**, deploy su Vercel. Il vecchio piano biforcuto
-> ("Next su Vercel / Start solo se Cloudflare") non c'è più di mezzo: UNA
-> codebase, sempre.
+> percorso deploy **documentato ufficialmente** nelle guide Start (via Nitro).
+> Migrazione a **TanStack Start in React** PRIMA del primo deploy.
+> Inventario librerie verificato live il 25/10/2026 tramite registry npm
+> (versioni esistenti di ogni package React/Solid).
 
-## Panorama librerie (stato 10/2026)
+## Inventario completo sul sito — disponibilità React / Solid (verificato npm)
 
-| Libreria | React | Solid | Utile per SwiftVault? |
-|---|---|---|---|
-| **Start** (SSR + server functions + middleware, deploy Vercel/CF/Nitro) | 1.0 stabile ✓ | 1.0 stabile ✓ | **Sì: diventa IL framework** (via Nitro → Vercel) |
-| **Router** (type-safe, file-based, search-params come stato) | ✓ | ✓ | Sì: incluso in Start, sostituisce App Router |
-| **Query** (cache dati client) | ✓ | ✓ | Marginalmente; catalogo = import statico. Se nasce preload player / ricerca lazy |
-| **Store** (stato persist, core framework-agnostic) | ✓ | ✓ | **Sì**: progressi/resume/note oggi a mano in localStorage (`hub:*`) |
-| **Pacer** (throttle/debounce) | ✓ | ✓ | **Sì**: salvataggio currentTime throttle |
-| **Virtual** (liste virtualizzate) | ✓ | ✓ | Sì per moduli lunghi (Appetizers: 26 lezioni) |
-| Form / Table / Charts / AI / Ranger | ✓ | ✓ | No (non ci sono form o tabelle) |
+| Libreria | Categoria | Versione React | Versione Solid | SwiftVault |
+|---|---|---|---|---|
+| **Start** | framework | 1.169.4 ✓ | 1.169.4 ✓ | ✅ IL framework (React) |
+| **Router** | framework | 1.170.46 ✓ | 1.170.43 ✓ | ✅ file-based + search-params |
+| **Query** | data/state | 5.104.5 ✓ | 5.104.5 ✓ | ✅ (vedi sotto) |
+| **Store** | data/state | 0.11.2 ✓ | 0.11.2 ✓ | ✅ progressi/resume/note |
+| **DB** (beta) | data/state | 0.5.12 ✓ | 0.3.12 ✓ | ❌ (no server; futuro sync) |
+| **Table** | ui | 9.3.1 ✓ | 9.3.1 ✓ | ❌ (nessuna griglia) |
+| **Form** | ui | 1.33.5 ✓ | 1.33.5 ✓ | ❌ (nessun form) |
+| **Charts** | ui | 1.1.0 ✓ | 1.1.0 ✓ | 🔶 fase 2: dashboard progressi |
+| **Virtual** | ux | 3.14.22 ✓ | 3.13.49 ✓ | ✅ moduli >15 lezioni |
+| **Pacer** | ux | 0.24.1 ✓ | 0.24.0 ✓ | ✅ throttle salvataggi |
+| **Hotkeys** | ux | 0.17.0 ✓ | 0.17.0 ✓ | ✅ scorciatoie player |
+| **Devtools** | tooling | 0.10.13 ✓ | 0.8.13 ✓ | ✅ panel in dev |
+| **AI** | vanilla | — (vanilla 1.0.0, utilizzabile da React) | — | ❌ |
+| **Markdown** | vanilla | — (vanilla 1.0.0 se note md in futuro) | — | 🔶 futuro |
+| **Highlight** | vanilla | — (vanilla 1.1.0) | — | 🔶 futuro |
+| **CLI** | tooling | 0.72.0 | — | ✅ scaffold migrazione |
+| **Config** | tooling | 0.22.2 | — | ❌ (tooling per publisher) |
 
-## Verifiche deploy Vercel (da tanstack.com/start-framework/docs → Hosting)
+**Bilancio**: **12 librerie con adapter React E Solid in parallelo** (esatte le
+versioni rilevate in npm), le altre 3 (AI / Markdown / Highlight) sono Vanilla
+→ usabili da entrambi. La parità React/Solid è completa: un eventuale port
+futuro tocca solo le componenti UI.
 
-- **Vercel è percorso documentato**: "Deploy to Vercel — one-click deployment" e
-  si compila con il plugin **Nitro** (`nitro` + `nitro/vite` in `vite.config.ts`,
-  output `.output/`).
-- ⚠️ Caveat onesto: Vercel NON è tra gli **Official Hosting Partners**
-  (Cloudflare/Netlify/Railway lo sono); `nitro/vite` è "still under active
-  development" per dichiarazione stessa delle docs. Rischio percepito: basso
-  per SwiftVault (app personale, deploy semplice, media statici) — accettato.
-- Cloudflare resta il preset più ufficiale (plugin CF dedicato): se mai
-  si decidesse per CF, il port è quasi nullo — mezza giornata di config.
-- Solid optionale anche in futuro: le librerie cambiano solo l'adapter
-  (`@tanstack/solid-*`), lo store core è lo stesso. Non ci serve ora; se il
-  codice segue il piano sotto l'eventuale port è UI-only.
+## Percorso di adozione: React su Vercel (con l'ordine degli step)
 
-## Migrazione Next → Start React (da fare PRIMA del primo deploy)
+1. **CLI** `npx @tanstack/cli create` — scaffold del progetto (step 0 della
+   migrazione)
+2. **Start + Router** — `vite.config`: `[tanstackStart(), nitro(), viteReact()]`;
+   route file-based `src/routes/`: `/` · `/c/$course` ·
+   `/c/$course/$module/$lesson`; search-params type-safe per deep-link
+   lezione e (futuro) timestamp del resume nella URL
+3. **Store** — store core con persist per `pos`/`done`/`notes` una sola
+   chiave versionata in localStorage (le chiavi `hub:*` vecchie restano
+   lette per compat)
+4. **Pacer** + Store — `throttle` di Pacer sostituisce il timer fatto a
+   mano che salva il `currentTime` (oggi "ogni 5s")
+5. **Hotkeys** — scorciatoie player: spazio play/pause, frecce ±10s,
+   J/K/L stile YouTube, F fullscreen, N/P lezione precedente/successiva
+6. **Virtual** — lista lezioni dei moduli lunghi (Appetizers: 26 lezioni)
+7. **Query + Query Devtools** — lazy-load dell'indice di ricerca
+   (`index.json` via fetch con cache) e prefetch media delle prossime
+   lezioni via Router loader (integrazione ufficiale di Query con Start):
+   da installare SOLO quando la ricerca non sta più nel bundle
+8. **Devtools panel** — `@tanstack/react-devtools` in dev per ispezionare
+   store/query; zero bundle in prod
+
+### Le NON adottate (e perché)
+
+- **DB** (beta): no server API in SwiftVault — ripescabile per un futuro
+  sync client-server
+- **Table / Form**: nessuna griglia o form nell'app (uso personale)
+- **AI**: vanilla, nessun use-case
+- **Config**: tooling per publisher di pacchetti, non per app
+- **Markdown / Highlight** (vanilla): 🔶 futuro — note in markdown
+  renderizzato e snippet di codice evidenziati, valutazione a tempo
+
+## Migrazione Next → Start React (8 step — UNA fase da mezza giornata)
 
 Media in volo non bloccano: `public/media` è **untracked** e `public/` funziona
 uguale con Vite. Ordine previsto:
 
 1. **Media finiti e committati** (swap AV1 → commit launchpad/swiftui →
-   catalogo): così la migrazione parte da un albero pulito e thematic
-2. **Scaffold**: `pnpm add @tanstack/react-start nitro @tanstack/react-router
-   @vitejs/plugin-react`; `vite.config.ts`:
+   catalogo): così la migrazione parte da un albero pulito e tematico
+2. **Scaffold**: `pnpm add @tanstack/react-start @tanstack/react-router
+   nitro @vitejs/plugin-react`; `vite.config.ts`:
    `plugins: [tanstackStart(), nitro(), viteReact()]` +
    `@tailwindcss/vite` (Tailwind 4 rimane; il PostCSS lascia il posto
    al Vite plugin)
@@ -65,13 +98,22 @@ uguale con Vite. Ordine previsto:
 Stima: mezza giornata. Trade-off accettato: rinuncio a React Compiler
 (legato a Next); il resto (Tailwind, TS, pnpm) sale senza attriti.
 
-## Idea bonus già contemplata nel piano (riassunto)
+## Nota deploy (da docs.tanstack.com/start/guide/hosting)
 
-1. **Store + Pacer + Virtual**: micro-commit nel codice portato
+- Vercel: percorso "one-click" via plugin **`nitro/vite`** — Nitro layer
+  "under active development": rischio basso e accettato per SwiftVault
+- Cloudflare resta il preset più ufficiale (plugin CF dedicato): se mai
+  si decidesse per CF, il port è quasi nullo — mezza giornata di config
+- **Solid a parità piena**: 12/12 adapter paralleli verificati npm, quindi
+  un eventuale piano B CF/Solid resta un port UI-only, mai riscrittura
+
+## Regole d'oro
+
+1. **Store + Pacer + Virtual + Hotkeys**: adozione subito dopo il port
    (migliorano il player e sopravvivono a qualunque futuro hosting)
-2. **Query**: differita: il catalogo entra nel bundle; se la ricerca cresce →
-   lazy index
-3. **Solid**: sempre opzionale; l'eventuale port resta UI-only grazie allo
-   store core framework-agnostic
-4. **Mai due router**: la regola si semplifica: sempre TanStack Router,
-   mai App Router (Next esce di scena in ogni caso)
+2. **Query**: solo quando serve davvero (ricerca lazy / prefetch), con
+   devtools accese solo in dev
+3. **DB / Table / Form / Config**: fuori — nessun uso reale per l'app
+4. **Router**: sempre TanStack Router, mai App Router (Next esce di scena)
+5. **Solid**: uguale-oppure (12/12 adapter paralleli verificati npm) →
+   l'eventuale port tocca solo le componenti UI
