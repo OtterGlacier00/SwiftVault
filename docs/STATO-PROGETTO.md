@@ -31,6 +31,14 @@ valutate e scartate: Content ID/strike e lock-in).
 - `scripts/build-catalog.mjs` → generatore catalogo (merge per modulo).
 - `scripts/apply-links.mjs` → creato volatile per mappare gli allegati: nasce e
   muore ad ogni modulo (vedi GUIDA-OPERATIVA).
+- `scripts/apply-links-auto.mjs` → mapping automatico finito (commit `331adbc`):
+  JOIN scan Teachable ↔ `_curriculum.json` ↔ catalogo. 136 lezioni launchpad/
+  swiftui: 46 allegati in `_risorse` + 66 URL esterni estratti dai testi
+  (pulizia etichette incollate: 6 regole in `cleanUrl`). Zero unmatched;
+  WWDC "What's New in SwiftUI" recuperato come lezione `link` (iOS 15 + iOS 16).
+  Skip: 16 `referral` + 5 `upsell` (promozioni, niente asset) e 4 `image`
+  (screenshot inline della pagina non scaricati — recuperabili da Teachable
+  fino al 24/11/2026 se mai servissero).
 - **Pipeline scarico Teachable (2026)**: `scripts/teachable-relay.mjs`
   (collettore HTTP locale: la pagina autenticata nel browser OpenCode
   invia scan/URL firmati al relay, i cookie NON escono mai dal tab) +
@@ -54,8 +62,9 @@ valutate e scartate: Content ID/strike e lock-in).
   **ZERO >100 MiB**; profilo 720p CRF34 preset10 g240 audio copy faststart
 - **Split repo in esecuzione**: `swiftvault-media` privato ha i 3 corsi
   (commit tematici + push ~10,4 GB background); a seguire: filter-repo +
-  submodule + push del repo code su `OtterGlacier00/SwiftVault`; mapping
-  "lezione ↔ allegato" dai txt per-modulo → durante il port (GUIDA §3)
+  submodule + push del repo code su `OtterGlacier00/SwiftVault`;
+  mapping "lezione ↔ allegato" **FATTO** automatico (`331adbc`,
+  apply-links-auto.mjs — GUIDA §3 ora è solo referenza storica)
 - `how-i-became-an-ios-dev`: ebook PDF con viewer iframe ✓
 
 **Nessun file >100 MiB resterà nel repo** (il guardaroba "AV1-tutto" è stato
@@ -158,11 +167,13 @@ CPU i3-2100: ~75 fps (2,5x realtime) → un file grande ~7-8 min.
 - [ ] Fine `av1-necessari` (12 file) → swap → verifica ZERO >100 MiB
 - [ ] Commit media: launchpad (61 H.264 + 6 AV1) e swiftui (60 H.264 + 8 AV1)
       SEPARATI (tematici), poi `src/data/catalog.json` + docs contatori
-- [ ] Lez 2 senza media (Launchpad: "Where to go…", "Did you like SwiftUI?";
-      SwiftUI: "WWDC - What's New in SwiftUI") — decidere: "link" manuale nel
-      catalogo o restano escluse (oggi: escluse, note nei txt per-modulo)
-- [ ] Aggancio `links` per le _risorse dei 2 corsi nuovi
-      (GUIDA §3 modello, oppure mapping già nei downloader: da derivare)
+- [x] Lez 2 senza media — deciso con Scan: Launchpad "Where to go…",
+      "Did you like SwiftUI?" restano escluse (upsell, nessun link utile);
+      SwiftUI "WWDC - What's New in SwiftUI" è ora lezione `link` nel
+      catalogo (video Apple iOS 15 + iOS 16 via apply-links-auto)
+- [x] Aggancio `links` per le _risorse dei 2 corsi nuovi — FATTO automatico
+      (commit `331adbc`, `scripts/apply-links-auto.mjs`: 46 download + 66
+      esterni su 136 lezioni, zero unmatched)
 - [ ] `pnpm run build` → OK → commit catalogo/docs
 - [ ] **Migrazione Next → TanStack Start React** (8 step in `TANSTACK-PLAN.md`:
       scaffold Vite/Nitro, `src/routes/`, auth middleware, remove Next) →
