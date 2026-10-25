@@ -5,8 +5,10 @@
 
 ## Missione essenziale
 
-App web **Next.js 16** (`create-next-app` default: src/, Tailwind 4, TS, pnpm,
-React Compiler, proxy.ts) che sostituisce la scuola Teachable di Sean Allen
+App web **TanStack Start 1.0 React** (migrata da Next.js 16 — decisione
+25/10/2026: Vercel Gold partner TanStack, drop Next, deploy Vercel via Nitro;
+dettagli e percorso in `TANSTACK-PLAN.md`; `create-next-app` base originale:
+src/, Tailwind 4, TS, pnpm). Sostituisce la scuola Teachable di Sean Allen
 (chiusa il **24 novembre 2026**). Video scaricati e dentro il repo privato,
 app deployata con Basic Auth su Vercel. Zero costi, uso personale.
 
@@ -86,32 +88,31 @@ Attuale ~1.5 GB → quando superiamo comodamente 3–4 GB (o push lenti):
    → accettare o passare a domain privato+token; da decidere eventualmente:
    le alternative private costo $ sono state escluse).
 
-## Piano B: tutto-Cloudflare (con TanStack Start)
+## Framework: TanStack Start (decisione 25/10/2026 — drop di Next)
 
-Regola decisa: **se si va di Cloudflare per l'host del sito, NON con Next+OpenNext**
-(adapter che emula Node su Workers — layer di più, punti deboli su streaming/
-cacheComponents/middleware). Si migra a **TanStack Start** (preset Cloudflare
-Workers ufficiale, SSR nativo sul runtime). Da **1.0 STABILE (13/10/2026)** con
-albero docs parallelo anche per **Solid**: la migrazione è percorsi-due alberi
-primari, non più esperimento. **Piano con paragone React/Solid: `TANSTACK-PLAN.md`.**
+Prima la regola era condizionale ("se hosting Cloudflare → TanStack Start,
+mai Next+OpenNext"). **Ora è incondizionale**: si droppa Next e si migra a
+**TanStack Start 1.0 React** prima del primo deploy, perché:
 
-- Trigger: quando i media vanno su R2 (e comunque dopo che i 2 corsi sono
-  completi e deployati), eventuale test A/B su workers.dev
-- Cosa si ricicla: `catalog.json` e gli script, `VideoPlayer`/resume/progressi
+- Vercel è **Gold partner** TanStack e il deploy Vercel è **documentato**
+  nelle guide Start (via plugin `nitro/vite` — caveat: Nitro layer "under
+  active development", rischio accettato per un'app semplice)
+- Un'unica codebase amica di qualunque hosting futuro (CF preset ufficiale
+  = spostamento mezza giornata)
+- Da 1.0 STABILE (13/10/2026) con docs anche per **Solid** (eventuale port
+  futuro UI-only, non richiesto ora)
+- **Piano di migrazione in 8 step: `TANSTACK-PLAN.md`** (mezza giornata)
+
+- Cosa si ricicla: `catalog.json` e tutti gli script, player/resume/progressi
   (localStorage = client-side, identico), Tailwind 4, componenti UI
-- Cosa si riscrive: le route App Router → TanStack Router (file-based),
-  `proxy.ts` → middleware lato Worker (Basic Auth stessa logica)
-- Media su R2 comunque inevitabile su CF (Pages: 20k file / ~25 MiB per file)
-- Auth alternativa con dominio custom su CF (dominio a pagamento): CF Access
-  gratis fino a 50 utenti — da valutare solo allora
+- Cosa si riscrive: le route App Router → `src/routes/` TanStack Router
+  (file-based), `proxy.ts` → middleware/server di Start (Basic Auth stessa
+  logica, stessi env)
 - **vinext SCARTATA** (feb 2026, v1.0 set 2026): "reimplementazione AI di Next
-  su Vite" (1 ingegnere, 1 settimana) — stesso problema di OpenNext (codebase
-  che vive in un layer non-Next + Next che rincorre), supporto a lungo termine
-  non impegnato e 2 pivot CF su Next-on-Workers in 12 mesi. Non è il ponte:
-  è un clone sperimentale. Decisione utente, definitiva.
-
-> Rimane il piano A: Vercel + il Next attuale, già testato. Il piano B è
->_documentato prima di servire_, così non si decide sotto pressione.
+  su Vite" (1 ingegnere, 1 settimana) — codebase che vive in un layer
+  non-Next, supporto a lungo termine non impegnato e 2 pivot CF su
+  Next-on-Workers in 12 mesi. Non è il ponte: è un clone sperimentale.
+  Decisione utente, definitiva.
 
 ## Deploy (da fare: non ancora fatto)
 
@@ -154,6 +155,9 @@ CPU i3-2100: ~75 fps (2,5x realtime) → un file grande ~7-8 min.
 - [ ] Aggancio `links` per le _risorse dei 2 corsi nuovi
       (GUIDA §3 modello, oppure mapping già nei downloader: da derivare)
 - [ ] `pnpm run build` → OK → commit catalogo/docs
+- [ ] **Migrazione Next → TanStack Start React** (8 step in `TANSTACK-PLAN.md`:
+      scaffold Vite/Nitro, `src/routes/`, auth middleware, remove Next) →
+      build OK locale
 - [ ] Push GitHub repo privato + deploy Vercel con env SITE_USER/SITE_PASS
       (⚠️ cambiare password demo `stefy/test` PRIMA del deploy)
 - [ ] Test post-deploy: / → 401 senza login, 200 con; /media/... → 401
