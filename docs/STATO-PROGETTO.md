@@ -41,24 +41,21 @@ valutate e scartate: Content ID/strike e lock-in).
 - Funzioni app: player con resume (localStorage), progressi, note per lezione,
   ricerca, PDF, download interni (`/media/...` con download attr), link esterni.
 
-## Stato media (25 oct pomeriggio)
+## Stato media (25 oct sera)
 
-- **WidgetKit: COMMITTATO AL 100%** — 8 moduli, 63 lezioni, ~3,5 GB → ~3,3 GB
-  (gli 8 file over-limit encodati AV1 720p CRF34: 105-140 MiB → 54-76 MiB,
-  **-59% medio**, commit `e2b9629`). WWDC 2023 = modulo manuale "link"
-- **iOS Dev Launchpad: SCARICATO COMPLETO** — 12 moduli, 67 video (3,9 GB,
-  2 lezioni solo-upsell senza media: escluse dal catalogo, note nel txt),
-  35 allegati (playground Challenge/Solution, zip progetti), txt note
-  per-modulo in `Downloads\ios-dev-launchpad`. Catalogo generato
-  (12 moduli / 67 lezioni), commit in attesa dello swap AV1 dei 6 over-limit
-- **SwiftUI Fundamentals: SCARICATO COMPLETO** — 9 moduli, 68 video (4,75 GB),
-  11 allegati (Weather, Frameworks, Scanner, Appetizers), lezioni "WWDC -
-  What's New in SwiftUI" e "iOS 15&16 Updates - Not Applicable" senza media
-  (escluse dal catalogo). 60 mp4 già in repo; 6 over-limit (8+2) in AV1/necessari.
-  Catalogo generato (9 moduli / 68 lezioni)
-- **AV1 solo-necessari IN CORSO**: 12 file >100 MiB (6 launchpad + 8 swiftui,
-  2 in doppio pass) — scene `scripts/av1-necessari.ps1`, skip sezione BONUS mai
-  scaricata; profilo 720p·CRF34·preset10·g·audio copy·faststart
+- **WidgetKit: NEL REPO MEDIA** — 8 moduli, 63 lezioni (6 di tipo "link"
+  WWDC senza mp4 → 57 mp4 / 3,22 GB), push in background
+- **iOS Dev Launchpad: NEL REPO MEDIA** — 12 moduli / 67 lezioni (61
+  H.264 + 6 AV1) / 3,23 GB con allegati; catalogo committato (`42ead67`)
+- **SwiftUI Fundamentals: NEL REPO MEDIA** — 9 moduli / 68 lezioni (60
+  H.264 + 8 AV1) / 3,98 GB con allegati; catalogo committato
+- **AV1 solo-necessari: FINITO ✓** — 14 file encodati + swappati (6
+  launchpad + 8 swiftui, ottimi ratio: 104-171 MiB → 38-90 MiB, ~-59%)
+  **ZERO >100 MiB**; profilo 720p CRF34 preset10 g240 audio copy faststart
+- **Split repo in esecuzione**: `swiftvault-media` privato ha i 3 corsi
+  (commit tematici + push ~10,4 GB background); a seguire: filter-repo +
+  submodule + push del repo code su `OtterGlacier00/SwiftVault`; mapping
+  "lezione ↔ allegato" dai txt per-modulo → durante il port (GUIDA §3)
 - `how-i-became-an-ios-dev`: ebook PDF con viewer iframe ✓
 
 **Nessun file >100 MiB resterà nel repo** (il guardaroba "AV1-tutto" è stato
