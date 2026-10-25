@@ -117,9 +117,12 @@ mai Next+OpenNext"). **Ora è incondizionale**: si droppa Next e si migra a
 ## Deploy (da fare: non ancora fatto)
 
 1. `git remote add origin git@github.com:<user>/swiftvault.git` → push (privato)
-2. Vercel: Import repo → **Environment Variables**: `SITE_USER`, `SITE_PASS`
+2. Vercel: Import repo → **Environment Variables**: `SITE_USER`, `SITE_PASS`,
+   `SESSION_SECRET` (cookie di sessione per la homescreen pubblica con
+   login, vedi `TANSTACK-PLAN.md` §Login)
    (⚠️ `.env.local` attuale usa le demo `stefy/test`: CAMBIARE prima del deploy)
-3. Test post-deploy: senza login → 401; con → 200; `/media/...` senza login → 401
+3. Test post-deploy: senza login → redirect a `/login`; con → 200;
+   `/media/...` senza cookie → 401
 
 ## Decisione media: AV1 **solo necessari** (25 ott 2026, rivista sera)
 

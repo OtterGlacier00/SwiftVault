@@ -79,6 +79,30 @@ Regola utente (25/10): usarle tutte durante il percorso TanStack.
 
 Calendario: find-skills PRIMA, frontend-design DURANTE, improve-codebase-architecture DOPO.
 
+## Login: homescreen pubblica (sostituisce il prompt nativo 401)
+
+Problema oggi: Basic Auth usa **il prompt del browser** (quella finestra grigia
+da ":wpa admin router") — pratico ma brutto, senza stesso marchingegno né
+branding. Nel port si sostituisce con tutta materia propria app:
+
+- **`/` pubblica**: chi non è autenticato vede la landing (titolo corsi,
+  copertine, "contenuto riservato") con form di login
+- **server function di login**: validate credenziali vs env
+  `SITE_USER`/`SITE_PASS` → cookie di sessione **firmato** (secret da env
+  `SESSION_SECRET`, con fallback automatico se assente), HttpOnly,
+  SameSite=Lax, scadenza 30 giorni
+- **middleware** sostituisce il Basic: cookie valido → let it go; assente →
+  l'utente resta su `/` pubblica; route protette → redirect `/`; `/media/*`
+  senza cookie → 401 (così i video non sono esplorabili a mano)
+- **logout** per svuotare il cookie (piccolo bottone nel hub)
+- compatibilità: Basic Auth continua a valere come fallback se il cookie
+  non c'è (per client tipo download tool), come oggi
+- `SESSION_SECRET` entra in env di Vercel assieme a SITE_USER/SITE_PASS
+
+Buon motivo per attivare **frontend-design** durante step 5: la landing e
+il hub meritano identità visiva propria (palette del sito corsi, tipografia
+equa, non-tavola genitoriale di default).
+
 ## Migrazione Next → Start React (8 step — UNA fase da mezza giornata)
 
 Media in volo non bloccano: `public/media` è **untracked** e `public/` funziona
@@ -96,9 +120,12 @@ uguale con Vite. Ordine previsto:
    `/` (dashboard) · `/c/$course` (corso) · `/c/$course/$module/$lesson`
    (lezione + player). `next/link` → `Link`, `useParams`/`useSearchParams` →
    hooks del Router (search-params type-safe = bonus resume deep-link)
-4. **Auth**: `src/proxy.ts` → server middleware di Start (stessa logica Basic
-   Auth, env `SITE_USER`/`SITE_PASS`: dev senza env resta aperto, prod senza
-   env → 500, identico a oggi)
+4. **Auth, versione moderna**: niente più prompt nativo 401 (quello stile
+   "pagina di configurazione router"). Route pubblica `/login` con form →
+   server function valida `SITE_USER`/`SITE_PASS` → **session cookie
+   firmato** middleware protegge tutte le route **incluse `/media`** (il
+   video gira con il cookie same-site, zero attriti). Vedasi
+   [§ Login: homescreen pubblica]
 5. **Componenti**: UI passa quasi intatta (client components senza direttive
    "use client"; `next/head` → `<head>` di Start; niente `next/image`)
 6. **Rimozione Next**: disinstallare `next`, cancellare `next.config.ts`,
@@ -108,8 +135,9 @@ uguale con Vite. Ordine previsto:
    A verifica verde: **frontend-design** SOLO se la UI merita un ritocco
    durante il port; **improve-codebase-architecture** post-migrazione
    (l'utente lo invoca a mano)
-8. **Deploy Vercel** (o prima push e poi import): env vars, test post-deploy
-   come da `STATO-PROGETTO` §Deploy
+8. **Deploy Vercel** (o prima push e poi import): env vars
+   `SITE_USER`, `SITE_PASS`, `SESSION_SECRET`, test post-deploy
+   come da `STATO-PROGETTO` §Deploy (401 → ora redirect a `/login`)
 
 Stima: mezza giornata. Trade-off accettato: rinuncio a React Compiler
 (legato a Next); il resto (Tailwind, TS, pnpm) sale senza attriti.
