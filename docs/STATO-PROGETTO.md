@@ -114,15 +114,22 @@ mai Next+OpenNext"). **Ora è incondizionale**: si droppa Next e si migra a
   Next-on-Workers in 12 mesi. Non è il ponte: è un clone sperimentale.
   Decisione utente, definitiva.
 
-## Deploy (da fare: non ancora fatto)
+## Deploy (da fare dopo Migrazione — 2 repo; layout Vercel da decidere al port)
 
-1. `git remote add origin git@github.com:<user>/swiftvault.git` → push (privato)
-2. Vercel: Import repo → **Environment Variables**: `SITE_USER`, `SITE_PASS`,
-   `SESSION_SECRET` (cookie di sessione per la homescreen pubblica con
-   login, vedi `TANSTACK-PLAN.md` §Login)
+1. **Ripulire la history media** di `swiftvault`:
+   `git filter-repo --path public/media --invert-paths` (WidgetKit AV1
+   committata non va in un repo public) — dopo: repo PUBLIC
+2. **Repo `swiftvault-media`** (private `OtterGlacier00/swiftvault-media`,
+   root = corsi): widgetkit push, poi launchpad e swiftui a fine AV1;
+   si aggiungerà come **submodule** in `public/media`
+3. Vercel: **una o due varianti a scelta durante il port** (tabella
+   pro/contro in `TANSTACK-PLAN.md` §Architettura deploy):
+   - A: 1 app + `fetch-media.mjs` build-time con `GH_TOKEN` fine-grained
+   - B: 2 progetti + URL firmate HMAC (`MEDIA_SIGN_SECRET` x2)
+   env sempre: `SITE_USER`, `SITE_PASS`, `SESSION_SECRET` (+ variante)
    (⚠️ `.env.local` attuale usa le demo `stefy/test`: CAMBIARE prima del deploy)
-3. Test post-deploy: senza login → redirect a `/login`; con → 200;
-   `/media/...` senza cookie → 401
+4. Test post-deploy: `/` pubblica → login moderno; con login → 200;
+   media accessibili solo da app autenticata (cookie o URL firmata)
 
 ## Decisione media: AV1 **solo necessari** (25 ott 2026, rivista sera)
 
@@ -161,9 +168,14 @@ CPU i3-2100: ~75 fps (2,5x realtime) → un file grande ~7-8 min.
 - [ ] **Migrazione Next → TanStack Start React** (8 step in `TANSTACK-PLAN.md`:
       scaffold Vite/Nitro, `src/routes/`, auth middleware, remove Next) →
       build OK locale
-- [ ] Push GitHub repo privato + deploy Vercel con env SITE_USER/SITE_PASS
+- [ ] **Split repo**: `swiftvault-media` privato (root = corsi) + **submodule**
+      su `public/media` + `git filter-repo` per togliere i media dalla
+      history + repo codice PUBLIC
+- [ ] Push GitHub (repo public — gh già autenticato: OtterGlacier00) +
+      deploy Vercel in versione A o B a scelta durante il port
       (⚠️ cambiare password demo `stefy/test` PRIMA del deploy)
-- [ ] Test post-deploy: / → 401 senza login, 200 con; /media/... → 401
+- [ ] Test post-deploy: `/` → login moderno; route → 200 col cookie;
+      media solo dopo autenticazione
 
 ## Roadmap facoltativa
 

@@ -92,8 +92,9 @@ branding. Nel port si sostituisce con tutta materia propria app:
   `SESSION_SECRET`, con fallback automatico se assente), HttpOnly,
   SameSite=Lax, scadenza 30 giorni
 - **middleware** sostituisce il Basic: cookie valido → let it go; assente →
-  l'utente resta su `/` pubblica; route protette → redirect `/`; `/media/*`
-  senza cookie → 401 (così i video non sono esplorabili a mano)
+  l'utente resta su `/` pubblica; route protette → redirect `/`. I media
+  NON passano da qui: il secondo progetto accetta solo URL firmate HMAC
+  (§Architettura deploy) — così niente doppio login né cookie cross-dominio
 - **logout** per svuotare il cookie (piccolo bottone nel hub)
 - compatibilità: Basic Auth continua a valere come fallback se il cookie
   non c'è (per client tipo download tool), come oggi
@@ -123,8 +124,9 @@ uguale con Vite. Ordine previsto:
 4. **Auth, versione moderna**: niente più prompt nativo 401 (quello stile
    "pagina di configurazione router"). Route pubblica `/login` con form →
    server function valida `SITE_USER`/`SITE_PASS` → **session cookie
-   firmato** middleware protegge tutte le route **incluse `/media`** (il
-   video gira con il cookie same-site, zero attriti). Vedasi
+   firmato**; il middleware protegge le route dell'app. I media sono sul
+   **secondo progetto** (repo separato): si accedono con **URL firmate
+   HMAC** generate dall'app (dettagli §Architettura deploy). Vedasi
    [§ Login: homescreen pubblica]
 5. **Componenti**: UI passa quasi intatta (client components senza direttive
    "use client"; `next/head` → `<head>` di Start; niente `next/image`)
@@ -142,14 +144,32 @@ uguale con Vite. Ordine previsto:
 Stima: mezza giornata. Trade-off accettato: rinuncio a React Compiler
 (legato a Next); il resto (Tailwind, TS, pnpm) sale senza attriti.
 
-## Nota deploy (da docs.tanstack.com/start/guide/hosting)
+## Architettura deploy: due repo — layout Vercel DA ACTUALIZZARE al port (25/10)
 
-- Vercel: percorso "one-click" via plugin **`nitro/vite`** — Nitro layer
-  "under active development": rischio basso e accettato per SwiftVault
-- Cloudflare resta il preset più ufficiale (plugin CF dedicato): se mai
-  si decidesse per CF, il port è quasi nullo — mezza giornata di config
-- **Solid a parità piena**: 12/12 adapter paralleli verificati npm, quindi
-  un eventuale piano B CF/Solid resta un port UI-only, mai riscrittura
+Split deciso: **solo i video sono uso personale** → repo media separato
+privato (`swiftvault-media` su GitHub, submodule del repo codice) e il repo
+codice diventa **public**. COME Vercel consuma i media al deploy: decisione
+APERTA da prendere durante la migrazione — due varianti fattibili:
+
+| | A. 1 app + fetch build-time | B. 2 progetti + URL firmate |
+|---|---|---|
+| Domini | **1** (app) | 2 (app + media) |
+| Login | cookie moderno, solo | cookie moderno + HMAC sui media |
+| Deploy codice (ogni push) | re-fetch/re-upload ~8 GB media | solo app, veloce |
+| Deploy media | spinge il submodule push | solo il repo media |
+| Secret | fine-grained `GH_TOKEN` (env Vercel) | `MEDIA_SIGN_SECRET` (su 2 progetti) |
+| Note | Vercel NON monta i submodule privati → step build `fetch-media.mjs` con token | cookie non viaggia `*.vercel.app` (PSL) → HMAC generato dall'app, media project 404 senza token |
+
+- 1 progetto Vercel per repo; entrambi Hobby free; banda condivisa
+  d'account (limiti soft ~100 GB/mese: ok per uso personale)
+- Media repo root = i corsi (`widgetkit/`, `ios-dev-launchpad/`, ...), mount
+  submodule su `public/media`
+- **Repo public va prima ripulito della history media**:
+  `git filter-repo --path public/media --invert-paths`
+  (WidgetKit AV1 committata non può stare in un repo public), poi push pulito
+- Cloudflare resta opzione di PORT futuro: preset Workers ufficiale con R2
+  binding nello stesso worker (1 dominio, cookie, zero egress) — il port
+  resta mezza giornata
 
 ## Regole d'oro
 
