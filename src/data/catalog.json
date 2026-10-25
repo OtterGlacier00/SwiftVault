@@ -714,19 +714,22 @@
               "id": "ios-dev-launchpad-conclusion-01-feeling-overwhelmed",
               "title": "Feeling overwhelmed-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Conclusion/01%20-%20Feeling%20overwhelmed-.mp4"
+              "src": "/media/ios-dev-launchpad/Conclusion/01%20-%20Feeling%20overwhelmed-.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-conclusion-02-where-to-go-from-here-next-steps",
               "title": "Where to go from here - Next steps",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Conclusion/02%20-%20Where%20to%20go%20from%20here%20-%20Next%20steps.mp4"
+              "src": "/media/ios-dev-launchpad/Conclusion/02%20-%20Where%20to%20go%20from%20here%20-%20Next%20steps.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-conclusion-03-a-quick-thank-you",
               "title": "A quick thank you",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Conclusion/03%20-%20A%20quick%20thank%20you.mp4"
+              "src": "/media/ios-dev-launchpad/Conclusion/03%20-%20A%20quick%20thank%20you.mp4",
+              "links": []
             }
           ]
         },
@@ -738,7 +741,8 @@
               "id": "ios-dev-launchpad-fizzbuzz-a-rite-of-passage-01-fizzbuzz-problem",
               "title": "FizzBuzz Problem",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/FizzBuzz%20-%20A%20Rite%20of%20Passage/01%20-%20FizzBuzz%20Problem.mp4"
+              "src": "/media/ios-dev-launchpad/FizzBuzz%20-%20A%20Rite%20of%20Passage/01%20-%20FizzBuzz%20Problem.mp4",
+              "links": []
             }
           ]
         },
@@ -750,43 +754,55 @@
               "id": "ios-dev-launchpad-general-programming-knowledge-01-what-is-this-section",
               "title": "What is this section-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/General%20Programming%20Knowledge/01%20-%20What%20is%20this%20section-.mp4"
+              "src": "/media/ios-dev-launchpad/General%20Programming%20Knowledge/01%20-%20What%20is%20this%20section-.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-general-programming-knowledge-02-how-do-most-apps-work-server-client-dynamic",
               "title": "How do most apps work- Server-Client dynamic",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/General%20Programming%20Knowledge/02%20-%20How%20do%20most%20apps%20work-%20Server-Client%20dynamic.mp4"
+              "src": "/media/ios-dev-launchpad/General%20Programming%20Knowledge/02%20-%20How%20do%20most%20apps%20work-%20Server-Client%20dynamic.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-general-programming-knowledge-03-what-is-an-api",
               "title": "What is an API-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/General%20Programming%20Knowledge/03%20-%20What%20is%20an%20API-.mp4"
+              "src": "/media/ios-dev-launchpad/General%20Programming%20Knowledge/03%20-%20What%20is%20an%20API-.mp4",
+              "links": [
+                {
+                  "title": "Link: youtu.be/lqsi03z_7",
+                  "url": "https://youtu.be/lqsi03z_7"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-general-programming-knowledge-04-what-is-version-control-git-github",
               "title": "What is version control (git & GitHub)-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/General%20Programming%20Knowledge/04%20-%20What%20is%20version%20control%20(git%20%26%20GitHub)-.mp4"
+              "src": "/media/ios-dev-launchpad/General%20Programming%20Knowledge/04%20-%20What%20is%20version%20control%20(git%20%26%20GitHub)-.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-general-programming-knowledge-05-3rd-party-libraries-dependencies",
               "title": "3rd Party Libraries (Dependencies)",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/General%20Programming%20Knowledge/05%20-%203rd%20Party%20Libraries%20(Dependencies).mp4"
+              "src": "/media/ios-dev-launchpad/General%20Programming%20Knowledge/05%20-%203rd%20Party%20Libraries%20(Dependencies).mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-general-programming-knowledge-06-what-are-edge-cases",
               "title": "What are edge cases-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/General%20Programming%20Knowledge/06%20-%20What%20are%20edge%20cases-.mp4"
+              "src": "/media/ios-dev-launchpad/General%20Programming%20Knowledge/06%20-%20What%20are%20edge%20cases-.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-general-programming-knowledge-07-ios-developer-career-paths",
               "title": "iOS Developer Career Paths",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/General%20Programming%20Knowledge/07%20-%20iOS%20Developer%20Career%20Paths.mp4"
+              "src": "/media/ios-dev-launchpad/General%20Programming%20Knowledge/07%20-%20iOS%20Developer%20Career%20Paths.mp4",
+              "links": []
             }
           ]
         },
@@ -798,43 +814,50 @@
               "id": "ios-dev-launchpad-getting-started-01-course-overview-what-we-ll-be-doing",
               "title": "Course overview - What we'll be doing",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Getting%20Started/01%20-%20Course%20overview%20-%20What%20we'll%20be%20doing.mp4"
+              "src": "/media/ios-dev-launchpad/Getting%20Started/01%20-%20Course%20overview%20-%20What%20we'll%20be%20doing.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-getting-started-02-i-was-just-like-you",
               "title": "I was just like you",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Getting%20Started/02%20-%20I%20was%20just%20like%20you.mp4"
+              "src": "/media/ios-dev-launchpad/Getting%20Started/02%20-%20I%20was%20just%20like%20you.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-getting-started-03-xcode-how-to-download-customize",
               "title": "Xcode - How to download & customize",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Getting%20Started/03%20-%20Xcode%20-%20How%20to%20download%20%26%20customize.mp4"
+              "src": "/media/ios-dev-launchpad/Getting%20Started/03%20-%20Xcode%20-%20How%20to%20download%20%26%20customize.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-getting-started-04-uikit-vs-swiftui",
               "title": "UIKit vs SwiftUI",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Getting%20Started/04%20-%20UIKit%20vs%20SwiftUI.mp4"
+              "src": "/media/ios-dev-launchpad/Getting%20Started/04%20-%20UIKit%20vs%20SwiftUI.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-getting-started-05-ios-15-update-uikit-vs-swiftui",
               "title": "iOS 15 Update - UIKit vs. SwiftUI",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Getting%20Started/05%20-%20iOS%2015%20Update%20-%20UIKit%20vs.%20SwiftUI.mp4"
+              "src": "/media/ios-dev-launchpad/Getting%20Started/05%20-%20iOS%2015%20Update%20-%20UIKit%20vs.%20SwiftUI.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-getting-started-06-ios-15-update-how-it-works",
               "title": "iOS 15 Update - How it Works",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Getting%20Started/06%20-%20iOS%2015%20Update%20-%20How%20it%20Works.mp4"
+              "src": "/media/ios-dev-launchpad/Getting%20Started/06%20-%20iOS%2015%20Update%20-%20How%20it%20Works.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-getting-started-07-ios-15-update-challenges",
               "title": "iOS 15 Update - Challenges",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Getting%20Started/07%20-%20iOS%2015%20Update%20-%20Challenges.mp4"
+              "src": "/media/ios-dev-launchpad/Getting%20Started/07%20-%20iOS%2015%20Update%20-%20Challenges.mp4",
+              "links": []
             }
           ]
         },
@@ -846,67 +869,127 @@
               "id": "ios-dev-launchpad-playing-card-workout-01-app-overview",
               "title": "App Overview",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/01%20-%20App%20Overview.mp4"
+              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/01%20-%20App%20Overview.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-playing-card-workout-02-storyboard-user-interface",
               "title": "Storyboard - User Interface",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/02%20-%20Storyboard%20-%20User%20Interface.mp4"
+              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/02%20-%20Storyboard%20-%20User%20Interface.mp4",
+              "links": [
+                {
+                  "title": "Scarica: card-deck.zip",
+                  "url": "/media/ios-dev-launchpad/Playing%20Card%20Workout/_risorse/card-deck.zip"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-playing-card-workout-03-storyboard-outlets-actions-rules-screen",
               "title": "Storyboard - Outlets, Actions & Rules Screen",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/03%20-%20Storyboard%20-%20Outlets%2C%20Actions%20%26%20Rules%20Screen.mp4"
+              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/03%20-%20Storyboard%20-%20Outlets%2C%20Actions%20%26%20Rules%20Screen.mp4",
+              "links": [
+                {
+                  "title": "Link: cocoacasts.com/should-outlets-be-weak-or-strong",
+                  "url": "https://cocoacasts.com/should-outlets-be-weak-or-strong"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-playing-card-workout-04-storyboard-timers-cards-logic",
               "title": "Storyboard - Timers, Cards & Logic",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/04%20-%20Storyboard%20-%20Timers%2C%20Cards%20%26%20Logic.mp4"
+              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/04%20-%20Storyboard%20-%20Timers%2C%20Cards%20%26%20Logic.mp4",
+              "links": [
+                {
+                  "title": "Scarica: card-deck.zip",
+                  "url": "/media/ios-dev-launchpad/Playing%20Card%20Workout/_risorse/card-deck.zip"
+                },
+                {
+                  "title": "Link: youtu.be/s2",
+                  "url": "https://youtu.be/s2"
+                },
+                {
+                  "title": "Link: youtu.be/d7",
+                  "url": "https://youtu.be/d7"
+                },
+                {
+                  "title": "Link: youtu.be/CGnOe4bl8_A",
+                  "url": "https://youtu.be/CGnOe4bl8_A"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-playing-card-workout-05-ios-15-update-buttons-in-storyboard",
               "title": "iOS 15 Update - Buttons in Storyboard",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/05%20-%20iOS%2015%20Update%20-%20Buttons%20in%20Storyboard.mp4"
+              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/05%20-%20iOS%2015%20Update%20-%20Buttons%20in%20Storyboard.mp4",
+              "links": [
+                {
+                  "title": "Link: developer.apple.com/sf-symbols",
+                  "url": "https://developer.apple.com/sf-symbols/"
+                },
+                {
+                  "title": "Link: youtu.be/Zyk1cbr0134",
+                  "url": "https://youtu.be/Zyk1cbr0134"
+                },
+                {
+                  "title": "Link: Apple WWDC (wwdc2021/10064)",
+                  "url": "https://developer.apple.com/videos/play/wwdc2021/10064"
+                },
+                {
+                  "title": "Link: Apple WWDC (wwdc2021/10196)",
+                  "url": "https://developer.apple.com/videos/play/wwdc2021/10196"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-playing-card-workout-06-programmatic-initial-setup",
               "title": "Programmatic - Initial Setup",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/06%20-%20Programmatic%20-%20Initial%20Setup.mp4"
+              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/06%20-%20Programmatic%20-%20Initial%20Setup.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-playing-card-workout-07-programmatic-custom-uibutton",
               "title": "Programmatic - Custom UIButton",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/07%20-%20Programmatic%20-%20Custom%20UIButton.mp4"
+              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/07%20-%20Programmatic%20-%20Custom%20UIButton.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-playing-card-workout-08-programmatic-ui-card-selection-screen",
               "title": "Programmatic - UI - Card Selection Screen",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/08%20-%20Programmatic%20-%20UI%20-%20Card%20Selection%20Screen.mp4"
+              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/08%20-%20Programmatic%20-%20UI%20-%20Card%20Selection%20Screen.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-playing-card-workout-09-programmatic-ui-rules-screen",
               "title": "Programmatic - UI - Rules Screen",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/09%20-%20Programmatic%20-%20UI%20-%20Rules%20Screen.mp4"
+              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/09%20-%20Programmatic%20-%20UI%20-%20Rules%20Screen.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-playing-card-workout-10-programmatic-app-logic",
               "title": "Programmatic - App Logic",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/10%20-%20Programmatic%20-%20App%20Logic.mp4"
+              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/10%20-%20Programmatic%20-%20App%20Logic.mp4",
+              "links": [
+                {
+                  "title": "Scarica: CardWorkout-Programmatic.zip",
+                  "url": "/media/ios-dev-launchpad/Playing%20Card%20Workout/_risorse/CardWorkout-Programmatic.zip"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-playing-card-workout-11-ios-15-update-buttons-in-code",
               "title": "iOS 15 Update - Buttons in Code",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/11%20-%20iOS%2015%20Update%20-%20Buttons%20in%20Code.mp4"
+              "src": "/media/ios-dev-launchpad/Playing%20Card%20Workout/11%20-%20iOS%2015%20Update%20-%20Buttons%20in%20Code.mp4",
+              "links": []
             }
           ]
         },
@@ -918,25 +1001,34 @@
               "id": "ios-dev-launchpad-random-colors-app-01-app-overview-what-we-re-going-to-build",
               "title": "App Overview - What we're going to build",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Random%20Colors%20App/01%20-%20App%20Overview%20-%20What%20we're%20going%20to%20build.mp4"
+              "src": "/media/ios-dev-launchpad/Random%20Colors%20App/01%20-%20App%20Overview%20-%20What%20we're%20going%20to%20build.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-random-colors-app-02-uinavigationcontroller-app-navigation-setup",
               "title": "UINavigationController - App Navigation Setup",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Random%20Colors%20App/02%20-%20UINavigationController%20-%20App%20Navigation%20Setup.mp4"
+              "src": "/media/ios-dev-launchpad/Random%20Colors%20App/02%20-%20UINavigationController%20-%20App%20Navigation%20Setup.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-random-colors-app-03-uitableview-setup",
               "title": "UITableView - Setup",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Random%20Colors%20App/03%20-%20UITableView%20-%20Setup.mp4"
+              "src": "/media/ios-dev-launchpad/Random%20Colors%20App/03%20-%20UITableView%20-%20Setup.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-random-colors-app-04-adding-colors-passing-data-refactoring",
               "title": "Adding Colors, Passing Data & Refactoring",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Random%20Colors%20App/04%20-%20Adding%20Colors%2C%20Passing%20Data%20%26%20Refactoring.mp4"
+              "src": "/media/ios-dev-launchpad/Random%20Colors%20App/04%20-%20Adding%20Colors%2C%20Passing%20Data%20%26%20Refactoring.mp4",
+              "links": [
+                {
+                  "title": "Scarica: RandomColors.zip",
+                  "url": "/media/ios-dev-launchpad/Random%20Colors%20App/_risorse/RandomColors.zip"
+                }
+              ]
             }
           ]
         },
@@ -948,43 +1040,117 @@
               "id": "ios-dev-launchpad-swift-language-basics-part-1-types-variables-and-functions-01-an-introduction-to-the-swift-language",
               "title": "An introduction to the Swift Language",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types%2C%20Variables%2C%20and%20Functions/01%20-%20An%20introduction%20to%20the%20Swift%20Language.mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types%2C%20Variables%2C%20and%20Functions/01%20-%20An%20introduction%20to%20the%20Swift%20Language.mp4",
+              "links": [
+                {
+                  "title": "Link: apple.com/swift",
+                  "url": "https://www.apple.com/swift/"
+                },
+                {
+                  "title": "Link: swift.org",
+                  "url": "https://swift.org"
+                },
+                {
+                  "title": "Link: youtube.com/watch?v=MO7",
+                  "url": "https://www.youtube.com/watch?v=MO7"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-swift-language-basics-part-1-types-variables-and-functions-02-basic-types-string-int-bool-etc",
               "title": "Basic Types- String, Int, Bool, etc...",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types%2C%20Variables%2C%20and%20Functions/02%20-%20Basic%20Types-%20String%2C%20Int%2C%20Bool%2C%20etc....mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types%2C%20Variables%2C%20and%20Functions/02%20-%20Basic%20Types-%20String%2C%20Int%2C%20Bool%2C%20etc....mp4",
+              "links": [
+                {
+                  "title": "Scarica: 01_Types_Challenge.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types,%20Variables,%20and%20Functions/_risorse/01_Types_Challenge.playground.zip"
+                },
+                {
+                  "title": "Scarica: 01_Types_Solution.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types,%20Variables,%20and%20Functions/_risorse/01_Types_Solution.playground.zip"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-swift-language-basics-part-1-types-variables-and-functions-03-variables-constants",
               "title": "Variables & Constants",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types%2C%20Variables%2C%20and%20Functions/03%20-%20Variables%20%26%20Constants.mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types%2C%20Variables%2C%20and%20Functions/03%20-%20Variables%20%26%20Constants.mp4",
+              "links": [
+                {
+                  "title": "Scarica: 02_Variables_Challenge.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types,%20Variables,%20and%20Functions/_risorse/02_Variables_Challenge.playground.zip"
+                },
+                {
+                  "title": "Scarica: 02_Variables_Solution.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types,%20Variables,%20and%20Functions/_risorse/02_Variables_Solution.playground.zip"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-swift-language-basics-part-1-types-variables-and-functions-04-what-is-an-array",
               "title": "What is an Array-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types%2C%20Variables%2C%20and%20Functions/04%20-%20What%20is%20an%20Array-.mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types%2C%20Variables%2C%20and%20Functions/04%20-%20What%20is%20an%20Array-.mp4",
+              "links": [
+                {
+                  "title": "Scarica: 03_Arrays_Challenge.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types,%20Variables,%20and%20Functions/_risorse/03_Arrays_Challenge.playground.zip"
+                },
+                {
+                  "title": "Scarica: 03_Arrays_Solution.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types,%20Variables,%20and%20Functions/_risorse/03_Arrays_Solution.playground.zip"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-swift-language-basics-part-1-types-variables-and-functions-05-what-is-a-set",
               "title": "What is a Set-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types%2C%20Variables%2C%20and%20Functions/05%20-%20What%20is%20a%20Set-.mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types%2C%20Variables%2C%20and%20Functions/05%20-%20What%20is%20a%20Set-.mp4",
+              "links": [
+                {
+                  "title": "Scarica: 04_Sets_Challenge.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types,%20Variables,%20and%20Functions/_risorse/04_Sets_Challenge.playground.zip"
+                },
+                {
+                  "title": "Scarica: 04_Sets_Solution.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types,%20Variables,%20and%20Functions/_risorse/04_Sets_Solution.playground.zip"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-swift-language-basics-part-1-types-variables-and-functions-06-what-is-a-dictionary",
               "title": "What is a Dictionary-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types%2C%20Variables%2C%20and%20Functions/06%20-%20What%20is%20a%20Dictionary-.mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types%2C%20Variables%2C%20and%20Functions/06%20-%20What%20is%20a%20Dictionary-.mp4",
+              "links": [
+                {
+                  "title": "Scarica: 05_Dictionaries_Challenge.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types,%20Variables,%20and%20Functions/_risorse/05_Dictionaries_Challenge.playground.zip"
+                },
+                {
+                  "title": "Scarica: 05_Dictionaries_Solution.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types,%20Variables,%20and%20Functions/_risorse/05_Dictionaries_Solution.playground.zip"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-swift-language-basics-part-1-types-variables-and-functions-07-what-is-a-function",
               "title": "What is a Function-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types%2C%20Variables%2C%20and%20Functions/07%20-%20What%20is%20a%20Function-.mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types%2C%20Variables%2C%20and%20Functions/07%20-%20What%20is%20a%20Function-.mp4",
+              "links": [
+                {
+                  "title": "Scarica: 06_Functions_Challenge.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types,%20Variables,%20and%20Functions/_risorse/06_Functions_Challenge.playground.zip"
+                },
+                {
+                  "title": "Scarica: 06_Functions_Solution.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%201%20-%20Types,%20Variables,%20and%20Functions/_risorse/06_Functions_Solution.playground.zip"
+                }
+              ]
             }
           ]
         },
@@ -996,37 +1162,92 @@
               "id": "ios-dev-launchpad-swift-language-basics-part-2-control-flow-operators-and-opti-01-how-to-use-if-statements",
               "title": "How to use if statements",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow%2C%20Operators%2C%20and%20Optionals/01%20-%20How%20to%20use%20if%20statements.mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow%2C%20Operators%2C%20and%20Optionals/01%20-%20How%20to%20use%20if%20statements.mp4",
+              "links": [
+                {
+                  "title": "Scarica: 07_If-Statements_Challenge.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow,%20Operators,%20and%20Optionals/_risorse/07_If-Statements_Challenge.playground.zip"
+                },
+                {
+                  "title": "Scarica: 07_If-Statements_Solution.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow,%20Operators,%20and%20Optionals/_risorse/07_If-Statements_Solution.playground.zip"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-swift-language-basics-part-2-control-flow-operators-and-opti-02-how-to-use-a-for-loop",
               "title": "How to use a for loop",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow%2C%20Operators%2C%20and%20Optionals/02%20-%20How%20to%20use%20a%20for%20loop.mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow%2C%20Operators%2C%20and%20Optionals/02%20-%20How%20to%20use%20a%20for%20loop.mp4",
+              "links": [
+                {
+                  "title": "Scarica: 08_Loops_Challenge.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow,%20Operators,%20and%20Optionals/_risorse/08_Loops_Challenge.playground.zip"
+                },
+                {
+                  "title": "Scarica: 08_Loops_Solution.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow,%20Operators,%20and%20Optionals/_risorse/08_Loops_Solution.playground.zip"
+                },
+                {
+                  "title": "Link: youtu.be/9",
+                  "url": "https://youtu.be/9"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-swift-language-basics-part-2-control-flow-operators-and-opti-03-what-is-an-enum",
               "title": "What is an Enum-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow%2C%20Operators%2C%20and%20Optionals/03%20-%20What%20is%20an%20Enum-.mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow%2C%20Operators%2C%20and%20Optionals/03%20-%20What%20is%20an%20Enum-.mp4",
+              "links": [
+                {
+                  "title": "Scarica: 09_Enum_Challenge.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow,%20Operators,%20and%20Optionals/_risorse/09_Enum_Challenge.playground.zip"
+                },
+                {
+                  "title": "Scarica: 09_Enum_Solution.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow,%20Operators,%20and%20Optionals/_risorse/09_Enum_Solution.playground.zip"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-swift-language-basics-part-2-control-flow-operators-and-opti-04-how-to-use-a-switch-statement",
               "title": "How to use a Switch Statement",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow%2C%20Operators%2C%20and%20Optionals/04%20-%20How%20to%20use%20a%20Switch%20Statement.mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow%2C%20Operators%2C%20and%20Optionals/04%20-%20How%20to%20use%20a%20Switch%20Statement.mp4",
+              "links": [
+                {
+                  "title": "Scarica: 10_Switch-Statements_Challenge.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow,%20Operators,%20and%20Optionals/_risorse/10_Switch-Statements_Challenge.playground.zip"
+                },
+                {
+                  "title": "Scarica: 10_Switch-Statements_Solution.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow,%20Operators,%20and%20Optionals/_risorse/10_Switch-Statements_Solution.playground.zip"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-swift-language-basics-part-2-control-flow-operators-and-opti-05-basic-operators",
               "title": "Basic Operators",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow%2C%20Operators%2C%20and%20Optionals/05%20-%20Basic%20Operators.mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow%2C%20Operators%2C%20and%20Optionals/05%20-%20Basic%20Operators.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-swift-language-basics-part-2-control-flow-operators-and-opti-06-optionals",
               "title": "Optionals",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow%2C%20Operators%2C%20and%20Optionals/06%20-%20Optionals.mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow%2C%20Operators%2C%20and%20Optionals/06%20-%20Optionals.mp4",
+              "links": [
+                {
+                  "title": "Scarica: 12_Optionals_Challenge.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow,%20Operators,%20and%20Optionals/_risorse/12_Optionals_Challenge.playground.zip"
+                },
+                {
+                  "title": "Scarica: 12_Optionals_Solution.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%202%20-%20Control%20Flow,%20Operators,%20and%20Optionals/_risorse/12_Optionals_Solution.playground.zip"
+                }
+              ]
             }
           ]
         },
@@ -1038,31 +1259,72 @@
               "id": "ios-dev-launchpad-swift-language-basics-part-3-classes-structs-01-what-is-self",
               "title": "What is self-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20%26%20Structs/01%20-%20What%20is%20self-.mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20%26%20Structs/01%20-%20What%20is%20self-.mp4",
+              "links": [
+                {
+                  "title": "Scarica: 14_Self_Challenge.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20&%20Structs/_risorse/14_Self_Challenge.playground.zip"
+                },
+                {
+                  "title": "Scarica: 14_Self_Solution.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20&%20Structs/_risorse/14_Self_Solution.playground.zip"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-swift-language-basics-part-3-classes-structs-02-what-is-a-class",
               "title": "What is a Class-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20%26%20Structs/02%20-%20What%20is%20a%20Class-.mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20%26%20Structs/02%20-%20What%20is%20a%20Class-.mp4",
+              "links": [
+                {
+                  "title": "Scarica: 15_Classes_Challenge.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20&%20Structs/_risorse/15_Classes_Challenge.playground.zip"
+                },
+                {
+                  "title": "Scarica: 15_Classes_Solution.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20&%20Structs/_risorse/15_Classes_Solution.playground.zip"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-swift-language-basics-part-3-classes-structs-03-what-is-inheritance",
               "title": "What is Inheritance-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20%26%20Structs/03%20-%20What%20is%20Inheritance-.mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20%26%20Structs/03%20-%20What%20is%20Inheritance-.mp4",
+              "links": [
+                {
+                  "title": "Scarica: 16_Subclasses_Challenge.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20&%20Structs/_risorse/16_Subclasses_Challenge.playground.zip"
+                },
+                {
+                  "title": "Scarica: 16_Subclasses_Solution.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20&%20Structs/_risorse/16_Subclasses_Solution.playground.zip"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-swift-language-basics-part-3-classes-structs-04-what-is-a-struct-value-types-vs-reference-types",
               "title": "What is a Struct - Value Types vs. Reference Types",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20%26%20Structs/04%20-%20What%20is%20a%20Struct%20-%20Value%20Types%20vs.%20Reference%20Types.mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20%26%20Structs/04%20-%20What%20is%20a%20Struct%20-%20Value%20Types%20vs.%20Reference%20Types.mp4",
+              "links": [
+                {
+                  "title": "Scarica: 17_Structs_Challenge.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20&%20Structs/_risorse/17_Structs_Challenge.playground.zip"
+                },
+                {
+                  "title": "Scarica: 17_Structs_Solution.playground.zip",
+                  "url": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20&%20Structs/_risorse/17_Structs_Solution.playground.zip"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-swift-language-basics-part-3-classes-structs-05-what-is-an-extension",
               "title": "What is an extension-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20%26%20Structs/05%20-%20What%20is%20an%20extension-.mp4"
+              "src": "/media/ios-dev-launchpad/Swift%20Language%20Basics%20-%20Part%203%20-%20Classes%20%26%20Structs/05%20-%20What%20is%20an%20extension-.mp4",
+              "links": []
             }
           ]
         },
@@ -1074,13 +1336,25 @@
               "id": "ios-dev-launchpad-swiftui-overview-01-what-is-swiftui",
               "title": "What is SwiftUI-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/SwiftUI%20Overview/01%20-%20What%20is%20SwiftUI-.mp4"
+              "src": "/media/ios-dev-launchpad/SwiftUI%20Overview/01%20-%20What%20is%20SwiftUI-.mp4",
+              "links": [
+                {
+                  "title": "Link: developer.apple.com/tutorials/swiftui",
+                  "url": "https://developer.apple.com/tutorials/swiftui/"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-swiftui-overview-02-creating-a-basic-screen-in-swiftui",
               "title": "Creating a basic screen in SwiftUI",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/SwiftUI%20Overview/02%20-%20Creating%20a%20basic%20screen%20in%20SwiftUI.mp4"
+              "src": "/media/ios-dev-launchpad/SwiftUI%20Overview/02%20-%20Creating%20a%20basic%20screen%20in%20SwiftUI.mp4",
+              "links": [
+                {
+                  "title": "Scarica: SwiftUI-Thumbnails.zip",
+                  "url": "/media/ios-dev-launchpad/SwiftUI%20Overview/_risorse/SwiftUI-Thumbnails.zip"
+                }
+              ]
             }
           ]
         },
@@ -1092,37 +1366,134 @@
               "id": "ios-dev-launchpad-the-world-of-swift-01-teaching-you-how-to-fish",
               "title": "Teaching you how to fish",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/The%20World%20of%20Swift/01%20-%20Teaching%20you%20how%20to%20fish.mp4"
+              "src": "/media/ios-dev-launchpad/The%20World%20of%20Swift/01%20-%20Teaching%20you%20how%20to%20fish.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-the-world-of-swift-02-why-is-wwdc-the-best-time-of-year",
               "title": "Why is WWDC the best time of year-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/The%20World%20of%20Swift/02%20-%20Why%20is%20WWDC%20the%20best%20time%20of%20year-.mp4"
+              "src": "/media/ios-dev-launchpad/The%20World%20of%20Swift/02%20-%20Why%20is%20WWDC%20the%20best%20time%20of%20year-.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-the-world-of-swift-03-how-twitter-can-change-your-career-seriously",
               "title": "How Twitter can change your career. Seriously.",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/The%20World%20of%20Swift/03%20-%20How%20Twitter%20can%20change%20your%20career.%20Seriously..mp4"
+              "src": "/media/ios-dev-launchpad/The%20World%20of%20Swift/03%20-%20How%20Twitter%20can%20change%20your%20career.%20Seriously..mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-the-world-of-swift-04-my-favorite-swift-blogs-and-websites",
               "title": "My favorite Swift blogs and websites",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/The%20World%20of%20Swift/04%20-%20My%20favorite%20Swift%20blogs%20and%20websites.mp4"
+              "src": "/media/ios-dev-launchpad/The%20World%20of%20Swift/04%20-%20My%20favorite%20Swift%20blogs%20and%20websites.mp4",
+              "links": [
+                {
+                  "title": "Link: swiftbysundell.com",
+                  "url": "https://www.swiftbysundell.com"
+                },
+                {
+                  "title": "Link: hackingwithswift.com",
+                  "url": "https://www.hackingwithswift.com"
+                },
+                {
+                  "title": "Link: raywenderlich.com/ios",
+                  "url": "https://www.raywenderlich.com/ios"
+                },
+                {
+                  "title": "Link: avanderlee.com",
+                  "url": "https://www.avanderlee.com"
+                },
+                {
+                  "title": "Link: donnywals.com",
+                  "url": "https://www.donnywals.com"
+                },
+                {
+                  "title": "Link: iosdevweekly.com",
+                  "url": "https://iosdevweekly.com"
+                },
+                {
+                  "title": "Link: swiftui-lab.com",
+                  "url": "https://swiftui-lab.com"
+                },
+                {
+                  "title": "Link: swiftwithmajid.com",
+                  "url": "https://swiftwithmajid.com"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-the-world-of-swift-05-swift-book-recommendations",
               "title": "Swift book recommendations",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/The%20World%20of%20Swift/05%20-%20Swift%20book%20recommendations.mp4"
+              "src": "/media/ios-dev-launchpad/The%20World%20of%20Swift/05%20-%20Swift%20book%20recommendations.mp4",
+              "links": [
+                {
+                  "title": "Link: store.raywenderlich.com/a/20866/link/1",
+                  "url": "https://store.raywenderlich.com/a/20866/link/1"
+                },
+                {
+                  "title": "Link: gumroad.com/a/762098803",
+                  "url": "https://gumroad.com/a/762098803"
+                },
+                {
+                  "title": "Link: developer.apple.com/design/human-interface-guidelines",
+                  "url": "https://developer.apple.com/design/human-interface-guidelines/"
+                },
+                {
+                  "title": "Link: seanallen.teachable.com/p/it-s-only-crazy-until-you-do-it",
+                  "url": "https://seanallen.teachable.com/p/it-s-only-crazy-until-you-do-it"
+                },
+                {
+                  "title": "Link: bigmountainstudio.com/a/fzc51",
+                  "url": "https://www.bigmountainstudio.com/a/fzc51"
+                },
+                {
+                  "title": "Link: docs.swift.org/swift-book",
+                  "url": "https://docs.swift.org/swift-book/"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-the-world-of-swift-06-can-t-miss-ios-developer-podcasts",
               "title": "Can't miss iOS developer podcasts",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/The%20World%20of%20Swift/06%20-%20Can't%20miss%20iOS%20developer%20podcasts.mp4"
+              "src": "/media/ios-dev-launchpad/The%20World%20of%20Swift/06%20-%20Can't%20miss%20iOS%20developer%20podcasts.mp4",
+              "links": [
+                {
+                  "title": "Link: podcasts.apple.com/us/podcast/ios-dev-discussions-sean-allen/id1426167395",
+                  "url": "https://podcasts.apple.com/us/podcast/ios-dev-discussions-sean-allen/id1426167395"
+                },
+                {
+                  "title": "Link: podcasts.apple.com/us/podcast/swift-by-sundell/id1267161825",
+                  "url": "https://podcasts.apple.com/us/podcast/swift-by-sundell/id1267161825"
+                },
+                {
+                  "title": "Link: podcasts.apple.com/us/podcast/swift-over-coffee/id1435076502",
+                  "url": "https://podcasts.apple.com/us/podcast/swift-over-coffee/id1435076502"
+                },
+                {
+                  "title": "Link: podcasts.apple.com/us/podcast/fireside-swift/id1269435221",
+                  "url": "https://podcasts.apple.com/us/podcast/fireside-swift/id1269435221"
+                },
+                {
+                  "title": "Link: podcasts.apple.com/us/podcast/swift-unwrapped/id1209817203",
+                  "url": "https://podcasts.apple.com/us/podcast/swift-unwrapped/id1209817203"
+                },
+                {
+                  "title": "Link: podcasts.apple.com/us/podcast/stacktrace/id1359435443",
+                  "url": "https://podcasts.apple.com/us/podcast/stacktrace/id1359435443"
+                },
+                {
+                  "title": "Link: podcasts.apple.com/us/podcast/the-swift-community-podcast/id1449664346",
+                  "url": "https://podcasts.apple.com/us/podcast/the-swift-community-podcast/id1449664346"
+                },
+                {
+                  "title": "Link: github.com/SwiftCommunityPodcast/podcast",
+                  "url": "https://github.com/SwiftCommunityPodcast/podcast"
+                }
+              ]
             }
           ]
         },
@@ -1134,49 +1505,67 @@
               "id": "ios-dev-launchpad-xcode-uikit-auto-layout-ios-dev-fundamentals-01-do-i-need-to-pay-99-for-an-apple-developer-account",
               "title": "Do I need to pay $99 for an Apple Developer account-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Xcode%2C%20UIKit%2C%20Auto%20Layout%20-%20iOS%20Dev%20Fundamentals/01%20-%20Do%20I%20need%20to%20pay%20%2499%20for%20an%20Apple%20Developer%20account-.mp4"
+              "src": "/media/ios-dev-launchpad/Xcode%2C%20UIKit%2C%20Auto%20Layout%20-%20iOS%20Dev%20Fundamentals/01%20-%20Do%20I%20need%20to%20pay%20%2499%20for%20an%20Apple%20Developer%20account-.mp4",
+              "links": [
+                {
+                  "title": "Link: developer.apple.com/programs",
+                  "url": "https://developer.apple.com/programs/"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-xcode-uikit-auto-layout-ios-dev-fundamentals-02-xcode-a-quick-tour",
               "title": "Xcode- A Quick Tour",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Xcode%2C%20UIKit%2C%20Auto%20Layout%20-%20iOS%20Dev%20Fundamentals/02%20-%20Xcode-%20A%20Quick%20Tour.mp4"
+              "src": "/media/ios-dev-launchpad/Xcode%2C%20UIKit%2C%20Auto%20Layout%20-%20iOS%20Dev%20Fundamentals/02%20-%20Xcode-%20A%20Quick%20Tour.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-xcode-uikit-auto-layout-ios-dev-fundamentals-03-what-s-new-in-xcode-12",
               "title": "What's New in Xcode 12",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Xcode%2C%20UIKit%2C%20Auto%20Layout%20-%20iOS%20Dev%20Fundamentals/03%20-%20What's%20New%20in%20Xcode%2012.mp4"
+              "src": "/media/ios-dev-launchpad/Xcode%2C%20UIKit%2C%20Auto%20Layout%20-%20iOS%20Dev%20Fundamentals/03%20-%20What's%20New%20in%20Xcode%2012.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-xcode-uikit-auto-layout-ios-dev-fundamentals-04-what-s-new-in-xcode-13",
               "title": "What's New in Xcode 13",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Xcode%2C%20UIKit%2C%20Auto%20Layout%20-%20iOS%20Dev%20Fundamentals/04%20-%20What's%20New%20in%20Xcode%2013.mp4"
+              "src": "/media/ios-dev-launchpad/Xcode%2C%20UIKit%2C%20Auto%20Layout%20-%20iOS%20Dev%20Fundamentals/04%20-%20What's%20New%20in%20Xcode%2013.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-xcode-uikit-auto-layout-ios-dev-fundamentals-05-what-s-new-in-xcode-15",
               "title": "What's New in Xcode 15",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Xcode%2C%20UIKit%2C%20Auto%20Layout%20-%20iOS%20Dev%20Fundamentals/05%20-%20What's%20New%20in%20Xcode%2015.mp4"
+              "src": "/media/ios-dev-launchpad/Xcode%2C%20UIKit%2C%20Auto%20Layout%20-%20iOS%20Dev%20Fundamentals/05%20-%20What's%20New%20in%20Xcode%2015.mp4",
+              "links": [
+                {
+                  "title": "Link: Apple WWDC (wwdc2023/10165)",
+                  "url": "https://developer.apple.com/videos/play/wwdc2023/10165"
+                }
+              ]
             },
             {
               "id": "ios-dev-launchpad-xcode-uikit-auto-layout-ios-dev-fundamentals-06-what-is-auto-layout",
               "title": "What is Auto Layout-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Xcode%2C%20UIKit%2C%20Auto%20Layout%20-%20iOS%20Dev%20Fundamentals/06%20-%20What%20is%20Auto%20Layout-.mp4"
+              "src": "/media/ios-dev-launchpad/Xcode%2C%20UIKit%2C%20Auto%20Layout%20-%20iOS%20Dev%20Fundamentals/06%20-%20What%20is%20Auto%20Layout-.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-xcode-uikit-auto-layout-ios-dev-fundamentals-07-uikit-introduction-user-interface-objects",
               "title": "UIKit Introduction - User Interface Objects",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Xcode%2C%20UIKit%2C%20Auto%20Layout%20-%20iOS%20Dev%20Fundamentals/07%20-%20UIKit%20Introduction%20-%20User%20Interface%20Objects.mp4"
+              "src": "/media/ios-dev-launchpad/Xcode%2C%20UIKit%2C%20Auto%20Layout%20-%20iOS%20Dev%20Fundamentals/07%20-%20UIKit%20Introduction%20-%20User%20Interface%20Objects.mp4",
+              "links": []
             },
             {
               "id": "ios-dev-launchpad-xcode-uikit-auto-layout-ios-dev-fundamentals-08-should-you-build-your-user-interface-with-storyboard-or-c",
               "title": "Should you build your user interface with Storyboard or code-",
               "type": "video",
-              "src": "/media/ios-dev-launchpad/Xcode%2C%20UIKit%2C%20Auto%20Layout%20-%20iOS%20Dev%20Fundamentals/08%20-%20Should%20you%20build%20your%20user%20interface%20with%20Storyboard%20or%20code-.mp4"
+              "src": "/media/ios-dev-launchpad/Xcode%2C%20UIKit%2C%20Auto%20Layout%20-%20iOS%20Dev%20Fundamentals/08%20-%20Should%20you%20build%20your%20user%20interface%20with%20Storyboard%20or%20code-.mp4",
+              "links": []
             }
           ]
         }
@@ -1197,157 +1586,272 @@
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-01-intro-tabbar",
               "title": "Intro & TabBar",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/01%20-%20Intro%20%26%20TabBar.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/01%20-%20Intro%20%26%20TabBar.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-02-app-lifecycle-explained",
               "title": "App Lifecycle Explained",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/02%20-%20App%20Lifecycle%20Explained.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/02%20-%20App%20Lifecycle%20Explained.mp4",
+              "links": [
+                {
+                  "title": "Link: peterfriese.dev/ultimate-guide-to-swiftui2-application-lifecycle",
+                  "url": "https://peterfriese.dev/ultimate-guide-to-swiftui2-application-lifecycle/"
+                },
+                {
+                  "title": "Link: developer.apple.com/documentation/swiftui/app",
+                  "url": "https://developer.apple.com/documentation/swiftui/app"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-03-appetizer-model",
               "title": "Appetizer Model",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/03%20-%20Appetizer%20Model.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/03%20-%20Appetizer%20Model.mp4",
+              "links": [
+                {
+                  "title": "Link: seanallen-course-backend.herokuapp.com/swiftui-fundamentals/appetizers",
+                  "url": "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/appetizers"
+                },
+                {
+                  "title": "Link: developer.apple.com/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types",
+                  "url": "https://developer.apple.com/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types"
+                },
+                {
+                  "title": "Link: swiftbysundell.com/basics/codable",
+                  "url": "https://www.swiftbysundell.com/basics/codable/"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-04-appetizerlistview",
               "title": "AppetizerListView",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/04%20-%20AppetizerListView.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/04%20-%20AppetizerListView.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-05-networkmanager",
               "title": "NetworkManager",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/05%20-%20NetworkManager.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/05%20-%20NetworkManager.mp4",
+              "links": [
+                {
+                  "title": "Link: seanallen-course-backend.herokuapp.com/swiftui-fundamentals/appetizers",
+                  "url": "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/appetizers"
+                },
+                {
+                  "title": "Link: youtu.be/8aPjqLqUEKAMy",
+                  "url": "https://youtu.be/8aPjqLqUEKAMy"
+                },
+                {
+                  "title": "Link: youtu.be/xiS5gJOIQxI",
+                  "url": "https://youtu.be/xiS5gJOIQxI"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-06-connecting-our-appetizerlistview-to-the-networkmanager",
               "title": "Connecting our AppetizerListView to the NetworkManager",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/06%20-%20Connecting%20our%20AppetizerListView%20to%20the%20NetworkManager.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/06%20-%20Connecting%20our%20AppetizerListView%20to%20the%20NetworkManager.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-07-errors-alerts",
               "title": "Errors & Alerts",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/07%20-%20Errors%20%26%20Alerts.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/07%20-%20Errors%20%26%20Alerts.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-08-loadingview",
               "title": "LoadingView",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/08%20-%20LoadingView.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/08%20-%20LoadingView.mp4",
+              "links": [
+                {
+                  "title": "Link: youtu.be/5gAD9am",
+                  "url": "https://youtu.be/5gAD9am"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-09-download-image-network-call",
               "title": "Download Image Network Call",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/09%20-%20Download%20Image%20Network%20Call.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/09%20-%20Download%20Image%20Network%20Call.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-10-appetizer-remote-image",
               "title": "Appetizer Remote Image",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/10%20-%20Appetizer%20Remote%20Image.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/10%20-%20Appetizer%20Remote%20Image.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-11-halftime-project-organization",
               "title": "Halftime Project Organization",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/11%20-%20Halftime%20Project%20Organization.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/11%20-%20Halftime%20Project%20Organization.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-12-appetizerdetailview-ui-setup",
               "title": "AppetizerDetailView UI Setup",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/12%20-%20AppetizerDetailView%20UI%20Setup.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/12%20-%20AppetizerDetailView%20UI%20Setup.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-13-appetizerdetailview-connections",
               "title": "AppetizerDetailView Connections",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/13%20-%20AppetizerDetailView%20Connections.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/13%20-%20AppetizerDetailView%20Connections.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-14-appetizerdetailview-refactor",
               "title": "AppetizerDetailView Refactor",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/14%20-%20AppetizerDetailView%20Refactor.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/14%20-%20AppetizerDetailView%20Refactor.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-15-accountview-ui-setup",
               "title": "AccountView UI Setup",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/15%20-%20AccountView%20UI%20Setup.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/15%20-%20AccountView%20UI%20Setup.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-16-accountviewmodel-text-validation",
               "title": "AccountViewModel & Text Validation",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/16%20-%20AccountViewModel%20%26%20Text%20Validation.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/16%20-%20AccountViewModel%20%26%20Text%20Validation.mp4",
+              "links": [
+                {
+                  "title": "Scarica: String+Ext.swift",
+                  "url": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/_risorse/String+Ext.swift"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-17-appstorage-persisting-a-custom-object",
               "title": "@AppStorage - Persisting a Custom Object",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/17%20-%20%40AppStorage%20-%20Persisting%20a%20Custom%20Object.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/17%20-%20%40AppStorage%20-%20Persisting%20a%20Custom%20Object.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-18-order-screen-ui-swipe-to-delete",
               "title": "Order Screen UI - Swipe to Delete",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/18%20-%20Order%20Screen%20UI%20-%20Swipe%20to%20Delete.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/18%20-%20Order%20Screen%20UI%20-%20Swipe%20to%20Delete.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-19-emptystate",
               "title": "EmptyState",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/19%20-%20EmptyState.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/19%20-%20EmptyState.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-20-environmentobject-order",
               "title": "@EnvironmentObject - Order",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/20%20-%20%40EnvironmentObject%20-%20Order.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/20%20-%20%40EnvironmentObject%20-%20Order.mp4",
+              "links": [
+                {
+                  "title": "Scarica: Appetizers.zip",
+                  "url": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/_risorse/Appetizers.zip"
+                },
+                {
+                  "title": "Link: youtu.be/OujkoTKEVj8",
+                  "url": "https://youtu.be/OujkoTKEVj8"
+                },
+                {
+                  "title": "Link: useyourloaf.com/blog/swift-guide-to-map-filter-reduce",
+                  "url": "https://useyourloaf.com/blog/swift-guide-to-map-filter-reduce/"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-21-ios-15-update-initial-run",
               "title": "iOS 15 Update - Initial Run",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/21%20-%20iOS%2015%20Update%20-%20Initial%20Run.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/21%20-%20iOS%2015%20Update%20-%20Initial%20Run.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-22-ios-15-update-tabbar-badge-list-separator-new-button",
               "title": "iOS 15 Update - TabBar Badge, List Separator, New Button",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/22%20-%20iOS%2015%20Update%20-%20TabBar%20Badge%2C%20List%20Separator%2C%20New%20Button.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/22%20-%20iOS%2015%20Update%20-%20TabBar%20Badge%2C%20List%20Separator%2C%20New%20Button.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-23-ios-15-update-focusstate-keyboard-ux-improvements",
               "title": "iOS 15 Update - @FocusState - Keyboard UX Improvements",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/23%20-%20iOS%2015%20Update%20-%20%40FocusState%20-%20Keyboard%20UX%20Improvements.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/23%20-%20iOS%2015%20Update%20-%20%40FocusState%20-%20Keyboard%20UX%20Improvements.mp4",
+              "links": [
+                {
+                  "title": "Link: developer.apple.com/documentation/swiftui/focusstate",
+                  "url": "https://developer.apple.com/documentation/swiftui/focusstate"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-24-ios-15-update-async-await",
               "title": "iOS 15 Update - Async-Await",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/24%20-%20iOS%2015%20Update%20-%20Async-Await.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/24%20-%20iOS%2015%20Update%20-%20Async-Await.mp4",
+              "links": [
+                {
+                  "title": "Link: gist.github.com/lattner/31ed37682ef1576b16bca1432ea9f782",
+                  "url": "https://gist.github.com/lattner/31ed37682ef1576b16bca1432ea9f782"
+                },
+                {
+                  "title": "Link: forums.swift.org/t/swift-concurrency-roadmap/41611",
+                  "url": "https://forums.swift.org/t/swift-concurrency-roadmap/41611"
+                },
+                {
+                  "title": "Link: developer.apple.com/videos/wwdc2021/?q=async",
+                  "url": "https://developer.apple.com/videos/wwdc2021/?q=async"
+                },
+                {
+                  "title": "Link: docs.swift.org/swift-book/LanguageGuide/Concurrency.html",
+                  "url": "https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-25-ios-15-update-asyncimage",
               "title": "iOS 15 Update - AsyncImage",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/25%20-%20iOS%2015%20Update%20-%20AsyncImage.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/25%20-%20iOS%2015%20Update%20-%20AsyncImage.mp4",
+              "links": [
+                {
+                  "title": "Scarica: Appetizers.zip",
+                  "url": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/_risorse/Appetizers.zip"
+                },
+                {
+                  "title": "Link: developer.apple.com/documentation/swiftui/asyncimage",
+                  "url": "https://developer.apple.com/documentation/swiftui/asyncimage"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-appetizers-app-putting-it-all-together-26-ios-16-update-swift-5-7-regex-guard-let-if-let-and-spellc",
               "title": "iOS 16 Update - Swift 5.7 - Regex, guard let-if let, and spellcheck",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/26%20-%20iOS%2016%20Update%20-%20Swift%205.7%20-%20Regex%2C%20guard%20let-if%20let%2C%20and%20spellcheck.mp4"
+              "src": "/media/swiftui-fundamentals/Appetizers%20App%20-%20Putting%20It%20All%20Together/26%20-%20iOS%2016%20Update%20-%20Swift%205.7%20-%20Regex%2C%20guard%20let-if%20let%2C%20and%20spellcheck.mp4",
+              "links": []
             }
           ]
         },
@@ -1359,55 +1863,83 @@
               "id": "swiftui-fundamentals-apple-frameworks-app-01-intro-project-setup",
               "title": "Intro & Project Setup",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/01%20-%20Intro%20%26%20Project%20Setup.mp4"
+              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/01%20-%20Intro%20%26%20Project%20Setup.mp4",
+              "links": [
+                {
+                  "title": "Scarica: MockData.swift",
+                  "url": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/_risorse/MockData.swift"
+                },
+                {
+                  "title": "Scarica: iOS-Frameworks-Icons.zip",
+                  "url": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/_risorse/iOS-Frameworks-Icons.zip"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-apple-frameworks-app-02-grid-the-beginning",
               "title": "Grid The Beginning",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/02%20-%20Grid%20The%20Beginning.mp4"
+              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/02%20-%20Grid%20The%20Beginning.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-apple-frameworks-app-03-grid-the-end",
               "title": "Grid - The End",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/03%20-%20Grid%20-%20The%20End.mp4"
+              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/03%20-%20Grid%20-%20The%20End.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-apple-frameworks-app-04-detail-view",
               "title": "Detail View",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/04%20-%20Detail%20View.mp4"
+              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/04%20-%20Detail%20View.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-apple-frameworks-app-05-connecting-views-mvvm-introduction",
               "title": "Connecting Views - MVVM Introduction",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/05%20-%20Connecting%20Views%20-%20MVVM%20Introduction.mp4"
+              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/05%20-%20Connecting%20Views%20-%20MVVM%20Introduction.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-apple-frameworks-app-06-integrating-with-uikit-introduction",
               "title": "Integrating with UIKit - Introduction",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/06%20-%20Integrating%20with%20UIKit%20-%20Introduction.mp4"
+              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/06%20-%20Integrating%20with%20UIKit%20-%20Introduction.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-apple-frameworks-app-07-refactor-project-organization-convert-to-list",
               "title": "Refactor, Project Organization, Convert To List",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/07%20-%20Refactor%2C%20Project%20Organization%2C%20Convert%20To%20List.mp4"
+              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/07%20-%20Refactor%2C%20Project%20Organization%2C%20Convert%20To%20List.mp4",
+              "links": [
+                {
+                  "title": "Scarica: Apple-Frameworks.zip",
+                  "url": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/_risorse/Apple-Frameworks.zip"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-apple-frameworks-app-08-ios-15-update-new-button-system",
               "title": "iOS 15 Update - New Button System",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/08%20-%20iOS%2015%20Update%20-%20New%20Button%20System.mp4"
+              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/08%20-%20iOS%2015%20Update%20-%20New%20Button%20System.mp4",
+              "links": [
+                {
+                  "title": "Scarica: Frameworks.zip",
+                  "url": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/_risorse/Frameworks.zip"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-apple-frameworks-app-09-ios-16-update-navigationstack-intro",
               "title": "iOS 16 Update - NavigationStack Intro",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/09%20-%20iOS%2016%20Update%20-%20NavigationStack%20Intro.mp4"
+              "src": "/media/swiftui-fundamentals/Apple%20Frameworks%20App/09%20-%20iOS%2016%20Update%20-%20NavigationStack%20Intro.mp4",
+              "links": []
             }
           ]
         },
@@ -1419,43 +1951,60 @@
               "id": "swiftui-fundamentals-barcode-scanner-uikit-integration-01-intro-ui-setup",
               "title": "Intro & UI Setup",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Barcode%20Scanner%20-%20UIKit%20Integration/01%20-%20Intro%20%26%20UI%20Setup.mp4"
+              "src": "/media/swiftui-fundamentals/Barcode%20Scanner%20-%20UIKit%20Integration/01%20-%20Intro%20%26%20UI%20Setup.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-barcode-scanner-uikit-integration-02-camera-uiviewcontroller-setup",
               "title": "Camera UIViewController Setup",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Barcode%20Scanner%20-%20UIKit%20Integration/02%20-%20Camera%20UIViewController%20Setup.mp4"
+              "src": "/media/swiftui-fundamentals/Barcode%20Scanner%20-%20UIKit%20Integration/02%20-%20Camera%20UIViewController%20Setup.mp4",
+              "links": [
+                {
+                  "title": "Scarica: ScannerVC.swift",
+                  "url": "/media/swiftui-fundamentals/Barcode%20Scanner%20-%20UIKit%20Integration/_risorse/ScannerVC.swift"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-barcode-scanner-uikit-integration-03-camera-uiviewcontroller-errors",
               "title": "Camera UIViewController Errors",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Barcode%20Scanner%20-%20UIKit%20Integration/03%20-%20Camera%20UIViewController%20Errors.mp4"
+              "src": "/media/swiftui-fundamentals/Barcode%20Scanner%20-%20UIKit%20Integration/03%20-%20Camera%20UIViewController%20Errors.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-barcode-scanner-uikit-integration-04-coordinator-setup",
               "title": "Coordinator Setup",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Barcode%20Scanner%20-%20UIKit%20Integration/04%20-%20Coordinator%20Setup.mp4"
+              "src": "/media/swiftui-fundamentals/Barcode%20Scanner%20-%20UIKit%20Integration/04%20-%20Coordinator%20Setup.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-barcode-scanner-uikit-integration-05-finishing-our-coordinator",
               "title": "Finishing our Coordinator",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Barcode%20Scanner%20-%20UIKit%20Integration/05%20-%20Finishing%20our%20Coordinator.mp4"
+              "src": "/media/swiftui-fundamentals/Barcode%20Scanner%20-%20UIKit%20Integration/05%20-%20Finishing%20our%20Coordinator.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-barcode-scanner-uikit-integration-06-errors-and-alerts",
               "title": "Errors and Alerts",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Barcode%20Scanner%20-%20UIKit%20Integration/06%20-%20Errors%20and%20Alerts.mp4"
+              "src": "/media/swiftui-fundamentals/Barcode%20Scanner%20-%20UIKit%20Integration/06%20-%20Errors%20and%20Alerts.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-barcode-scanner-uikit-integration-07-refactor-mvvm-project-organization",
               "title": "Refactor, MVVM, Project Organization",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Barcode%20Scanner%20-%20UIKit%20Integration/07%20-%20Refactor%2C%20MVVM%2C%20Project%20Organization.mp4"
+              "src": "/media/swiftui-fundamentals/Barcode%20Scanner%20-%20UIKit%20Integration/07%20-%20Refactor%2C%20MVVM%2C%20Project%20Organization.mp4",
+              "links": [
+                {
+                  "title": "Scarica: BarcodeScanner.zip",
+                  "url": "/media/swiftui-fundamentals/Barcode%20Scanner%20-%20UIKit%20Integration/_risorse/BarcodeScanner.zip"
+                }
+              ]
             }
           ]
         },
@@ -1467,13 +2016,44 @@
               "id": "swiftui-fundamentals-conclusion-01-what-next-swiftui-evolving-feedback",
               "title": "What Next- SwiftUI Evolving & Feedback",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Conclusion/01%20-%20What%20Next-%20SwiftUI%20Evolving%20%26%20Feedback.mp4"
+              "src": "/media/swiftui-fundamentals/Conclusion/01%20-%20What%20Next-%20SwiftUI%20Evolving%20%26%20Feedback.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-conclusion-03-swiftui-learning-resources",
               "title": "SwiftUI Learning Resources",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Conclusion/03%20-%20SwiftUI%20Learning%20Resources.mp4"
+              "src": "/media/swiftui-fundamentals/Conclusion/03%20-%20SwiftUI%20Learning%20Resources.mp4",
+              "links": [
+                {
+                  "title": "Link: hackingwithswift.com",
+                  "url": "https://www.hackingwithswift.com"
+                },
+                {
+                  "title": "Link: gumroad.com/a/656585843",
+                  "url": "https://gumroad.com/a/656585843"
+                },
+                {
+                  "title": "Link: swiftwithmajid.com",
+                  "url": "https://swiftwithmajid.com"
+                },
+                {
+                  "title": "Link: swiftbysundell.com",
+                  "url": "https://www.swiftbysundell.com"
+                }
+              ]
+            },
+            {
+              "id": "swiftui-fundamentals-conclusion-wwdc-what-s-new-in-swiftui",
+              "title": "WWDC - What's New in SwiftUI",
+              "type": "link",
+              "src": "https://developer.apple.com/videos/play/wwdc2022/10052",
+              "links": [
+                {
+                  "title": "Link: Apple WWDC (wwdc2021/10018)",
+                  "url": "https://developer.apple.com/videos/play/wwdc2021/10018"
+                }
+              ]
             }
           ]
         },
@@ -1485,31 +2065,36 @@
               "id": "swiftui-fundamentals-getting-started-01-what-you-ll-learn-how-you-ll-learn-it",
               "title": "What You'll Learn & How You'll Learn It",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Getting%20Started/01%20-%20What%20You'll%20Learn%20%26%20How%20You'll%20Learn%20It.mp4"
+              "src": "/media/swiftui-fundamentals/Getting%20Started/01%20-%20What%20You'll%20Learn%20%26%20How%20You'll%20Learn%20It.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-getting-started-02-ios-15-16-updates-how-they-work",
               "title": "iOS 15 & 16 Updates - How They Work",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Getting%20Started/02%20-%20iOS%2015%20%26%2016%20Updates%20-%20How%20They%20Work.mp4"
+              "src": "/media/swiftui-fundamentals/Getting%20Started/02%20-%20iOS%2015%20%26%2016%20Updates%20-%20How%20They%20Work.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-getting-started-03-what-s-new-in-xcode-13",
               "title": "What's New in Xcode 13",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Getting%20Started/03%20-%20What's%20New%20in%20Xcode%2013.mp4"
+              "src": "/media/swiftui-fundamentals/Getting%20Started/03%20-%20What's%20New%20in%20Xcode%2013.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-getting-started-04-what-s-new-in-xcode-14",
               "title": "What's New in Xcode 14",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Getting%20Started/04%20-%20What's%20New%20in%20Xcode%2014.mp4"
+              "src": "/media/swiftui-fundamentals/Getting%20Started/04%20-%20What's%20New%20in%20Xcode%2014.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-getting-started-05-what-s-new-in-xcode-15",
               "title": "What's New in Xcode 15",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Getting%20Started/05%20-%20What's%20New%20in%20Xcode%2015.mp4"
+              "src": "/media/swiftui-fundamentals/Getting%20Started/05%20-%20What's%20New%20in%20Xcode%2015.mp4",
+              "links": []
             }
           ]
         },
@@ -1521,13 +2106,15 @@
               "id": "swiftui-fundamentals-optimization-01-part-1-observedobject-and-link",
               "title": "Part 1 - @ObservedObject and Link",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Optimization/01%20-%20Part%201%20-%20%40ObservedObject%20and%20Link.mp4"
+              "src": "/media/swiftui-fundamentals/Optimization/01%20-%20Part%201%20-%20%40ObservedObject%20and%20Link.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-optimization-02-part-2-clean-up-dark-mode-colors-and-date-calculations",
               "title": "Part 2 - Clean up, Dark Mode Colors and Date Calculations",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Optimization/02%20-%20Part%202%20-%20Clean%20up%2C%20Dark%20Mode%20Colors%20and%20Date%20Calculations.mp4"
+              "src": "/media/swiftui-fundamentals/Optimization/02%20-%20Part%202%20-%20Clean%20up%2C%20Dark%20Mode%20Colors%20and%20Date%20Calculations.mp4",
+              "links": []
             }
           ]
         },
@@ -1539,19 +2126,36 @@
               "id": "swiftui-fundamentals-review-01-state-binding-coordinators",
               "title": "@State, @Binding & Coordinators",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Review/01%20-%20%40State%2C%20%40Binding%20%26%20Coordinators.mp4"
+              "src": "/media/swiftui-fundamentals/Review/01%20-%20%40State%2C%20%40Binding%20%26%20Coordinators.mp4",
+              "links": [
+                {
+                  "title": "Link: developer.apple.com/documentation/swiftui/state",
+                  "url": "https://developer.apple.com/documentation/swiftui/state"
+                },
+                {
+                  "title": "Link: developer.apple.com/documentation/swiftui/binding",
+                  "url": "https://developer.apple.com/documentation/swiftui/binding"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-review-02-observableobject-stateobject-observedobject-environmentob",
               "title": "@ObservableObject, @StateObject, @ObservedObject & @EnvironmentObject",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Review/02%20-%20%40ObservableObject%2C%20%40StateObject%2C%20%40ObservedObject%20%26%20%40EnvironmentObject.mp4"
+              "src": "/media/swiftui-fundamentals/Review/02%20-%20%40ObservableObject%2C%20%40StateObject%2C%20%40ObservedObject%20%26%20%40EnvironmentObject.mp4",
+              "links": [
+                {
+                  "title": "Link: developer.apple.com/documentation/swiftui/stateobject",
+                  "url": "https://developer.apple.com/documentation/swiftui/stateobject"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-review-03-ios-17-observation-framework-observable",
               "title": "iOS 17- Observation Framework (@Observable)",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Review/03%20-%20iOS%2017-%20Observation%20Framework%20(%40Observable).mp4"
+              "src": "/media/swiftui-fundamentals/Review/03%20-%20iOS%2017-%20Observation%20Framework%20(%40Observable).mp4",
+              "links": []
             }
           ]
         },
@@ -1563,31 +2167,36 @@
               "id": "swiftui-fundamentals-swiftui-mindset-how-it-works-01-declarative-vs-imperative",
               "title": "Declarative vs. Imperative",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/SwiftUI%20Mindset%20-%20How%20it%20Works/01%20-%20Declarative%20vs.%20Imperative.mp4"
+              "src": "/media/swiftui-fundamentals/SwiftUI%20Mindset%20-%20How%20it%20Works/01%20-%20Declarative%20vs.%20Imperative.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-swiftui-mindset-how-it-works-02-swiftui-view-trees-updates",
               "title": "SwiftUI View Trees & Updates",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/SwiftUI%20Mindset%20-%20How%20it%20Works/02%20-%20SwiftUI%20View%20Trees%20%26%20Updates.mp4"
+              "src": "/media/swiftui-fundamentals/SwiftUI%20Mindset%20-%20How%20it%20Works/02%20-%20SwiftUI%20View%20Trees%20%26%20Updates.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-swiftui-mindset-how-it-works-03-viewbuilders",
               "title": "ViewBuilders",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/SwiftUI%20Mindset%20-%20How%20it%20Works/03%20-%20ViewBuilders.mp4"
+              "src": "/media/swiftui-fundamentals/SwiftUI%20Mindset%20-%20How%20it%20Works/03%20-%20ViewBuilders.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-swiftui-mindset-how-it-works-04-modifiers",
               "title": "Modifiers",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/SwiftUI%20Mindset%20-%20How%20it%20Works/04%20-%20Modifiers.mp4"
+              "src": "/media/swiftui-fundamentals/SwiftUI%20Mindset%20-%20How%20it%20Works/04%20-%20Modifiers.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-swiftui-mindset-how-it-works-05-my-swiftui-adventure",
               "title": "My SwiftUI Adventure",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/SwiftUI%20Mindset%20-%20How%20it%20Works/05%20-%20My%20SwiftUI%20Adventure.mp4"
+              "src": "/media/swiftui-fundamentals/SwiftUI%20Mindset%20-%20How%20it%20Works/05%20-%20My%20SwiftUI%20Adventure.mp4",
+              "links": []
             }
           ]
         },
@@ -1599,55 +2208,87 @@
               "id": "swiftui-fundamentals-weather-app-user-interface-01-the-basics",
               "title": "The Basics",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/01%20-%20The%20Basics.mp4"
+              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/01%20-%20The%20Basics.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-weather-app-user-interface-02-city-text",
               "title": "City Text",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/02%20-%20City%20Text.mp4"
+              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/02%20-%20City%20Text.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-weather-app-user-interface-03-sf-symbols",
               "title": "SF Symbols",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/03%20-%20SF%20Symbols.mp4"
+              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/03%20-%20SF%20Symbols.mp4",
+              "links": [
+                {
+                  "title": "Link: developer.apple.com/sf-symbols",
+                  "url": "https://developer.apple.com/sf-symbols/"
+                },
+                {
+                  "title": "Link: developer.apple.com/design/human-interface-guidelines/sf-symbols/overview",
+                  "url": "https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-weather-app-user-interface-04-main-vstack-w-sf-symbol",
               "title": "Main VStack w- SF Symbol",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/04%20-%20Main%20VStack%20w-%20SF%20Symbol.mp4"
+              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/04%20-%20Main%20VStack%20w-%20SF%20Symbol.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-weather-app-user-interface-05-hstack-of-days-custom-color",
               "title": "HStack of Days & Custom Color",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/05%20-%20HStack%20of%20Days%20%26%20Custom%20Color.mp4"
+              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/05%20-%20HStack%20of%20Days%20%26%20Custom%20Color.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-weather-app-user-interface-06-button-refactoring-project-organization",
               "title": "Button, Refactoring & Project Organization",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/06%20-%20Button%2C%20Refactoring%20%26%20Project%20Organization.mp4"
+              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/06%20-%20Button%2C%20Refactoring%20%26%20Project%20Organization.mp4",
+              "links": []
             },
             {
               "id": "swiftui-fundamentals-weather-app-user-interface-07-state-and-binding-basics",
               "title": "@State and @Binding Basics",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/07%20-%20%40State%20and%20%40Binding%20Basics.mp4"
+              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/07%20-%20%40State%20and%20%40Binding%20Basics.mp4",
+              "links": [
+                {
+                  "title": "Scarica: SwiftUI-Weather.zip",
+                  "url": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/_risorse/SwiftUI-Weather.zip"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-weather-app-user-interface-08-ios-15-update-sf-symbols-binding-clarification",
               "title": "iOS 15 Update - SF Symbols & @Binding Clarification",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/08%20-%20iOS%2015%20Update%20-%20SF%20Symbols%20%26%20%40Binding%20Clarification.mp4"
+              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/08%20-%20iOS%2015%20Update%20-%20SF%20Symbols%20%26%20%40Binding%20Clarification.mp4",
+              "links": [
+                {
+                  "title": "Scarica: Weather.zip",
+                  "url": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/_risorse/Weather.zip"
+                },
+                {
+                  "title": "Link: developer.apple.com/sf-symbols",
+                  "url": "https://developer.apple.com/sf-symbols/"
+                }
+              ]
             },
             {
               "id": "swiftui-fundamentals-weather-app-user-interface-09-ios-16-update-new-gradient-modifier",
               "title": "iOS 16 Update - New Gradient Modifier",
               "type": "video",
-              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/09%20-%20iOS%2016%20Update%20-%20New%20Gradient%20Modifier.mp4"
+              "src": "/media/swiftui-fundamentals/Weather%20App%20-%20User%20Interface/09%20-%20iOS%2016%20Update%20-%20New%20Gradient%20Modifier.mp4",
+              "links": []
             }
           ]
         }
