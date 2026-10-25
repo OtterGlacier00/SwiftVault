@@ -3,7 +3,7 @@
 > Documento di handoff: da leggere a inizio sessione (umano o agente).
 > Ultimo aggiornamento: 25 ottobre 2026.
 
-## Unicorn essenziale](mission)
+## Missione essenziale
 
 App web **Next.js 16** (`create-next-app` default: src/, Tailwind 4, TS, pnpm,
 React Compiler, proxy.ts) che sostituisce la scuola Teachable di Sean Allen
@@ -19,7 +19,7 @@ valutate e scartate: Content ID/strike e lock-in).
 ## Struttura chiave
 
 - `src/data/catalog.json` → corsi/moduli/lezioni. **Sorgente di verità** (lo
-  script la rigenera per corso con marge incremental).
+  script la rigenera per corso con merge incrementale).
 - `src/proxy.ts` → Basic Auth (convenzione Next 16 per il vecchio middleware).
   Credenziali: env `SITE_USER` / `SITE_PASS`. In dev (senza env) resta aperto;
   in produzione senza env → **500** per non esporre niente.
@@ -27,44 +27,51 @@ valutate e scartate: Content ID/strike e lock-in).
   `public/media/<corso>/<modulo>/_risorse/` → zip/swift/avatar di progetto,
   NON lezioni: lo script li salta; si agganciano alle lezioni con `links`.
 - `scripts/build-catalog.mjs` → generatore catalogo (merge per modulo).
-- `scripts/apply-links.mjs` → creato volatile per mappare i allegati: nasce e
+- `scripts/apply-links.mjs` → creato volatile per mappare gli allegati: nasce e
   muore ad ogni modulo (vedi GUIDA-OPERATIVA).
+- **Pipeline scarico Teachable (2026)**: `scripts/teachable-relay.mjs`
+  (collettore HTTP locale: la pagina autenticata nel browser OpenCode
+  invia scan/URL firmati al relay, i cookie NON escono mai dal tab) +
+  `scripts/launchpad-dl.mjs` / `scripts/swiftui-dl.mjs` (downloader resumable
+  da URL firmati S3, validi ~5h, skip sezione BONUS, txt note automatici) +
+  `scripts/av1-necessari.ps1` (encode AV1 dei soli mp4 >100 MiB + swap NEW-aware).
+  Dettagli in GUIDA-OPERATIVA §5.
 - Funzioni app: player con resume (localStorage), progressi, note per lezione,
   ricerca, PDF, download interni (`/media/...` con download attr), link esterni.
 
-## Stato media (al 25 ott) — ⚠️ bloccati su GitHub per 8 file
+## Stato media (25 oct pomeriggio)
 
-- **WidgetKit: 8 moduli, 63 lezioni** (~3,5 GB totali sotto public/media)
-  - Getting Started (5), Monthly Theme (7), Repo Watcher/Network (15),
-    Configuration & Intents (9)
-  - **Live Activities & Dynamic Island (6)** — zips BasketballSim starter/complete/iOS17
-  - **Lock Screen Widgets (2)** — zip + nota padding iOS 17 (txt in _risorse)
-  - **Widget #3 Swift Calendar (13)** — Date+Ext.swift, zip SwiftCal×6
-    (incl. SwiftCal-iOS18-UI.zip arrivato in ritardo, agganciato a lez 12),
-    WWDC SwiftData ×5; lo zip "corso completo" aggiornato iOS 26 resta
-    agganciato alla lez 1 di Getting Started
-  - **WWDC 2023 (6, solo link esterni Apple, tipo "link")** — modulo manuale
-    senza media; lez 04/05 di SwiftCal erano titoli gemelli: la 05 rinominata
-    "(parte 2)" nel file
-- **Nuovo corso `how-i-became-an-ios-dev`**: ebook PDF di Sean (15 MB, type "pdf",
-  viewer integrato via iframe) in modulo "Il Libro"
-- iOS Dev Launchpad + SwiftUI Fundamentals: ancora da scaricare
+- **WidgetKit: COMMITTATO AL 100%** — 8 moduli, 63 lezioni, ~3,5 GB → ~3,3 GB
+  (gli 8 file over-limit encodati AV1 720p CRF34: 105-140 MiB → 54-76 MiB,
+  **-59% medio**, commit `e2b9629`). WWDC 2023 = modulo manuale "link"
+- **iOS Dev Launchpad: SCARICATO COMPLETO** — 12 moduli, 67 video (3,9 GB,
+  2 lezioni solo-upsell senza media: escluse dal catalogo, note nel txt),
+  35 allegati (playground Challenge/Solution, zip progetti), txt note
+  per-modulo in `Downloads\ios-dev-launchpad`. Catalogo generato
+  (12 moduli / 67 lezioni), commit in attesa dello swap AV1 dei 6 over-limit
+- **SwiftUI Fundamentals: SCARICATO COMPLETO** — 9 moduli, 68 video (4,75 GB),
+  11 allegati (Weather, Frameworks, Scanner, Appetizers), lezioni "WWDC -
+  What's New in SwiftUI" e "iOS 15&16 Updates - Not Applicable" senza media
+  (escluse dal catalogo). 60 mp4 già in repo; 6 over-limit (8+2) in AV1/necessari.
+  Catalogo generato (9 moduli / 68 lezioni)
+- **AV1 solo-necessari IN CORSO**: 12 file >100 MiB (6 launchpad + 8 swiftui,
+  2 in doppio pass) — scene `scripts/av1-necessari.ps1`, skip sezione BONUS mai
+  scaricata; profilo 720p·CRF34·preset10·g·audio copy·faststart
+- `how-i-became-an-ios-dev`: ebook PDF con viewer iframe ✓
 
-**BLOCCO HARD: 8 video nuovi superano il limite di GitHub (100 MiB)** (max 139,7):
-quella parte NON è commitabile/pushabile così com'è. Da decidere una di due
-strade (sotto: R2 ovvero re-encode AV1 dei soli over-limit). Fin ad allora i
-media nuovi restano NON-commitati (in working tree: visibili in dev, invisibili
-a git).
+**Nessun file >100 MiB resterà nel repo** (il guardaroba "AV1-tutto" è stato
+revocato: i file H.264 sotto il limite restano originali).
 
-## Le due strade per il blocco GitHub (verdetto da prendere)
+## Blocco GitHub risolto (che vie erano)
 
-- **A. R2 ORA** (consigliata): tutti i media fuori repo (git filter-repo sui
-  vecchi blob pre-push, repo solo-codice), catalog --base → URL r2.dev. 10 GB
-  free, egress 0. Richiede: account CF + bucket creati da te (UI browser).
-- **B. AV1 re-encode SOLO degli 8 file >100 MiB**: si entra sotto 100 MiB ognuno,
-  il resto del repo resta com'è (totale ~3,5 GB). ffmpeg CRF ~32: test di
-  qualità su 1 video prima di lanciare il lotto. Zero account esterni, perdita
-  di qualità (bassa su screencast) definitiva.
+Due strade valutate a suo tempo:
+- **A. R2**: scartata (decisione utente).
+- **B. AV1 re-encode**: scelta in versione ridotta "solo i file >100 MiB"
+  (decisione rivista la sera stessa: prima si disse "tutta la libreria",
+  poi si è направлении al minimo necessario per rientrare nei 100 MiB).
+  WidgetKit fase 1 completata così; launchpad/swiftui via `av1-necessari.ps1`.
+  **Regola valida per i file già committati**: non ricomprimere → la history
+  avrebbe doppio blob (H.264 ma anche AV1). Encode PRIMA del commit.
 
 ## Limite pratico e il piano "quando si gonfia"
 
@@ -111,28 +118,43 @@ Workers ufficiale, SSR nativo sul runtime).
    (⚠️ `.env.local` attuale usa le demo `stefy/test`: CAMBIARE prima del deploy)
 3. Test post-deploy: senza login → 401; con → 200; `/media/...` senza login → 401
 
-## Decisione media: AV1 (25 ott 2026)
+## Decisione media: AV1 **solo necessari** (25 ott 2026, rivista sera)
 
-Scelta utente: **re-encode AV1 su TUTTA la libreria** (non solo gli over-limit),
-**720p · CRF 34 · preset 10 · g=240 · audio copy · faststart**. Misurato su CPU
-i3-2100: ~75 fps (2,5x realtime) → ragionevole per i batch notturni.
+Prima decisione "re-encode AV1 su TUTTA la libreria"; **rivista a serata**:
+si encodano con AV1 **solo gli mp4 >100 MiB** (limite GitHub), il resto resta
+H.264 originale (nessuna perdita di qualità inutile, niente blob doppi nel
+git history). Profilo tenuto: **720p · CRF 34 · preset 10 · g=240 ·
+audio copy · faststart** (--720p stabilito nei test di qualità). Misurato su
+CPU i3-2100: ~75 fps (2,5x realtime) → un file grande ~7-8 min.
 
-- Fase 1 (in corso): i **8 file >100 MiB** → sotto il limite GitHub
-- Fase 2: il resto della libreria con lo stesso profilo (degli originali:
-  esistono nei Downloads per i download recenti; per quelli vecchi anche nel
-  git history prima di eventuali rewrite)
-- Nomi/path IDENTICI → catalogo intoccato; swap dopo verifica <100 MiB
-  (`scripts/av1-swap.ps1`). Test di qualità fatti su 3 clip in
-  `%TEMP%\opencode\av1test\` — l'utente ha scelto il 720p
-- ffmpeg installato via winget (Gyan.FFmpeg, alias in Links; usare percorso
-  esplicito in script). Playback AV1: Chromium/Edge ok, WMP no
+- WidgetKit: i 8 file over-limit **fatti, swappati e committati**
+  (commit `e2b9629`, -59% medio)
+- Launchpad + SwiftUI: `scripts/av1-necessari.ps1` (encode + swap NEW-aware:
+  l'originale può anche non essere già nel repo). Secondo pass possibile con
+  skip se lo stage è già valido (per i file arrivati dopo il primo scan)
+- Nomi/path IDENTICI → il catalogo non si tocca; mai commitare H.264 che
+  verrà poi sostituito: i blob resterebbero in history
+- ffmpeg via winget (Gyan.FFmpeg, alias in Links). Playback AV1:
+  Chromium/Edge ok, WMP no
 
 ## Cosa fare il prossimo giro
 
-- [ ] Scarica da Teachable: iOS Dev Launchpad + SwiftUI Fundamentals (entro 24/11)
-- [ ] Per ogni modulo: GUIDA-OPERATIVA.md §1
-- [ ] Aggiornare questa pagina (contatore moduli e dimensione repo)
-- [ ] Quando tutti i video: primo push + deploy; considerare spostamento R2
+- [x] Scarica da Teachable: iOS Dev Launchpad ✓ + SwiftUI Fundamentals ✓
+      (script `launchpad-dl.mjs` / `swiftui-dl.mjs`, retry automatico oath URL
+      scadute: risolvi i falliti in-page e rilancia — i già scaricati skip)
+- [x] AV1 fase 1 WidgetKit (commit `e2b9629`)
+- [ ] Fine `av1-necessari` (12 file) → swap → verifica ZERO >100 MiB
+- [ ] Commit media: launchpad (61 H.264 + 6 AV1) e swiftui (60 H.264 + 8 AV1)
+      SEPARATI (tematici), poi `src/data/catalog.json` + docs contatori
+- [ ] Lez 2 senza media (Launchpad: "Where to go…", "Did you like SwiftUI?";
+      SwiftUI: "WWDC - What's New in SwiftUI") — decidere: "link" manuale nel
+      catalogo o restano escluse (oggi: escluse, note nei txt per-modulo)
+- [ ] Aggancio `links` per le _risorse dei 2 corsi nuovi
+      (GUIDA §3 modello, oppure mapping già nei downloader: da derivare)
+- [ ] `pnpm run build` → OK → commit catalogo/docs
+- [ ] Push GitHub repo privato + deploy Vercel con env SITE_USER/SITE_PASS
+      (⚠️ cambiare password demo `stefy/test` PRIMA del deploy)
+- [ ] Test post-deploy: / → 401 senza login, 200 con; /media/... → 401
 
 ## Roadmap facoltativa
 

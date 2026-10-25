@@ -74,7 +74,60 @@ writeFileSync(path, JSON.stringify(d, null, 2) + "\n");
 Titoli link: interno `/media/...` → "Scarica: …" (cover download attr);
 esterno → titolo normale (apre in nuova scheda).
 
-## 4. Debug visivo
+## 5. Scarico di un corso Teachable (pipeline 2026 — collaudata su Launchpad/SwiftUI)
+
+Agente + browser OpenCode con sessione Teachable loggata; **i cookie NON
+escono mai dal tab** (httpOnly: il network capture li redige comunque).
+
+1. **Relay locale**: `node scripts\teachable-relay.mjs 8800` (background).
+   Endpoint: `POST /<nome>` salvo `%TEMP%\opencode\collect\<nome>.json`,
+   `GET /<nome>` li rilegge, `GET /stat` elenca.
+2. **Curriculum** via `browser.evaluate` nel tab autenticato: sezioni =
+   `.course-section` (titolo + `a[href*="/lectures/"]`), salvare in
+   `Downloads\<corso>\_curriculum.json` (titoli + id; la sezione `*BONUS*`
+   eventualmente esclusa a valle, non nello scarico).
+3. **Scan** per batch di ~23 lezioni (limite 60s per evaluate): in-page
+   `fetch('/courses/<id>/lectures/<lid>')` → regex sui blocchi
+   `<!-- DEBUG: attachment.id=N, kind=video|text|… -->` — ATTO: il markup
+   usa **apici singoli** (`href='...'`), i regex classici su `"` falliscono.
+   kind=video → dl `hotmart_lecture_video_download_link`; kind=text → note
+   lezione; other-kinds: `files[]` con href `https?` (direct, senza cookie).
+   → POST `swiftui-scan-N` al relay.
+4. **Resolve URL firmati** (batch ~15, il 60s tocca): `fetch(dl,
+   {redirect:'follow'})` → `response.url` è un presigned S3
+   (`X-Amz-Expires=18000`, **5h di validità**); `response.body.cancel()`.
+   → POST al relay `swiftui-resolved-N`.
+5. **Download resumable** (`node scripts\swiftui-dl.mjs` in background):
+   legge `_curriculum.json` + scan + resolved; struttura
+   `<Modulo>/NN - Title.mp4` + `_risorse/` (nome pulito: via
+   `[hash12-20]_`), txt `Nuovo documento di testo.txt` per modulo con note;
+   skip sezione BONUS se non in `_curriculum.json`.
+   **I falliti `http 400`** = firma S3 invalidata (casuale): à fine run
+   rilevoli da `swiftui-dl-final.json`; risolvi SOLO quegli id (stessa
+   procedura del punto 4 → `swiftui-retry-1`) e rilancia il downloader
+   (resumable: i presenti con size giusta saltano).
+6. **Media nel repo**:
+   ```powershell
+   robocopy "Downloads\<corso>" "public\media\<corso>" /E /XO /NFL /NDL /NJH /NP `
+     /XF "Nuovo documento di testo.txt" "_curriculum.json" @($overLimit)
+   # $overLimit = mp4 >= 100MiB (non copiarli: arriveranno AV1)
+   ``` 
+7. **AV1 solo-necessari**: `powershell -File scripts\av1-necessari.ps1`
+   (background, ~7-8 min/file grande): scorre Downloads di entrambi i corsi,
+   encode 720p CRF34 gli >100 MiB (skip se stage già valido) **e poi fa
+   swap NEW-aware** (crea il file nel repo se manca). Rilanciabile dopo il
+   primo giro (per file arrivati dopo lo scan).
+8. **Catalogo**: `node scripts\build-catalog.mjs --course <id> --folder
+   "Downloads\<corso>" --base "/media/<id>"` (EditMode: i `.txt` sono skip
+   di default ora; le lezioni senza video NON vengono generate — escluse o
+   aggiunte manuali come `link`).
+9. **Commit tematici**: media corso · media corso AV1-ready · catalogo · docs.
+
+> Lezioni tipo "upsell-only" (niente video, solo facebook-group) e
+> lezioni "link esterno senza asset" restano fuori dal catalogo: documentate
+> nei txt per-modulo.
+
+## 6. Debug visivo
 
 Player/progressi/note si verificano a livello browser: aprire
 `http://localhost:3000/c/widgetkit` con dev server (`pnpm dev`), player deve
