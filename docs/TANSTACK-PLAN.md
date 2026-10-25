@@ -75,7 +75,7 @@ Regola utente (25/10): usarle tutte durante il percorso TanStack.
 |---|---|---|
 | **find-skills** | Step 0 migrazione (prima dello scaffold) | cercare nel registry skill utili al port (es. TanStack/Vite/Tailwind); installarle in `.agents/skills/` e aggiornare questa tabella |
 | **frontend-design** | Step 5 componenti (se il port tocca la UI: dashboard/player) | identità visiva durante il porting: tipografia/palette intenzionale, evitare l'aspetto "template default" |
-| **improve-codebase-architecture** | POST-migrazione (dopo la verifica step 7) | scan deepening-opportunities con report HTML: i seam nuovi resi possibili da Router/Store (adapter localStorage, interfacce catalogo). ⚠️ `disable-model-invocation: true` → invocabile solo dall'utente. ⚠️ richiede la skill "codebase-design" (vocabolario): se assente, va installata via **find-skills** |
+| **improve-codebase-architecture** | POST-migrazione (dopo la verifica step 7) | scan deepening-opportunities con report HTML: i seam nuovi resi possibili da Router/Store (adapter localStorage, interfacce catalogo). ⚠️ `disable-model-invocation: true` → invocabile solo dall'utente. ⚠️ richiede la skill "codebase-design" (vocabolario): **✅ INSTALLATA** (`mattpocock/skills@codebase-design`, 855K install — trovata via find-skills) |
 
 Calendario: find-skills PRIMA, frontend-design DURANTE, improve-codebase-architecture DOPO.
 
