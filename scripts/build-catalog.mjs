@@ -56,7 +56,7 @@ if (!existsSync(folder)) {
 // ---------- tipi supportati ----------
 const VIDEO_EXT = new Set([".mp4", ".m4v", ".mov", ".webm"]);
 const PDF_EXT = new Set([".pdf"]);
-const SKIP_EXT = new Set([".db", ".ini", ".json"]);
+const SKIP_EXT = new Set([".db", ".ini", ".json", ".txt"]); // txt = note per-modulo generate a parte, non lezioni
 
 // ---------- util ----------
 const slugify = (s) =>
