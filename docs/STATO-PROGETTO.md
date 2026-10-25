@@ -44,7 +44,8 @@ valutate e scartate: Content ID/strike e lock-in).
     "Curso completo" aggiornato iOS 26, agganciato sia a lez 12 che a lez 1
     di Getting Started)
   - **WWDC 2023 (6, solo link esterni Apple, tipo "link")** — modulo manuale
-    senza media; lez 04/05 di SwiftCal eranorand nombre "(parte 2)" nel file
+    senza media; lez 04/05 di SwiftCal erano titoli gemelli: la 05 rinominata
+    "(parte 2)" nel file
 - **Nuovo corso `how-i-became-an-ios-dev`**: ebook PDF di Sean (15 MB, type "pdf",
   viewer integrato via iframe) in modulo "Il Libro"
 - iOS Dev Launchpad + SwiftUI Fundamentals: ancora da scaricare
