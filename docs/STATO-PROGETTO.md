@@ -60,11 +60,25 @@ valutate e scartate: Content ID/strike e lock-in).
 - **AV1 solo-necessari: FINITO ✓** — 14 file encodati + swappati (6
   launchpad + 8 swiftui, ottimi ratio: 104-171 MiB → 38-90 MiB, ~-59%)
   **ZERO >100 MiB**; profilo 720p CRF34 preset10 g240 audio copy faststart
-- **Split repo in esecuzione**: `swiftvault-media` privato ha i 3 corsi
-  (commit tematici + push ~10,4 GB background); a seguire: filter-repo +
-  submodule + push del repo code su `OtterGlacier00/SwiftVault`;
-  mapping "lezione ↔ allegato" **FATTO** automatico (`331adbc`,
-  apply-links-auto.mjs — GUIDA §3 ora è solo referenza storica)
+- **Split repo FATTO ✓ (29 ott, decisone utente: solo LOCALE, niente mega
+  push)**: la history "megapush chunked" verso GitHub è stata **abbandonata**
+  dopo 6×HTTP 408 (upload lungi >500MB non reggono) — la repo privata GitHub
+  `swiftvault-media` risulta ormai inesistente/raggiungibile (non spingere
+  più). Stato finale:
+  - **Repo media locale**: `C:\Users\Stefy\Documents\Dev\swiftvault-media`
+    (48 commit tematici, 4 corsi: widgetkit, ios-dev-launchpad,
+    swiftui-fundamentals + ebook how-i-became → **solo essa**, tree pulita)
+  - **`git filter-repo --path public/media --invert-paths --force` ESEGUITO**
+    sul code repo: **zero** path media in tutta la history (46→39 ref,
+    7 commit solo-media potati); backup pre-filtro (mirror, hardlink) in
+    `C:\Users\Stefy\Documents\Dev\swiftvault-backup-prefilter.git`
+    → eliminare quando tutto è verificato
+  - **Submodule locale** su `public/media` → url file locale, NON un remoto
+    GitHub: la history pubblica non contiene media e non li scarica
+  - ⚠️ ref `refs/t3/orchestration-v2/checkpoints/*` (8) puntano al vecchio
+    history: **non spingerle mai**; push pubblico solo della ref `main`
+  - mapping "lezione ↔ allegato" **FATTO** automatico (`331adbc`,
+    apply-links-auto.mjs — GUIDA §3 ora è solo referenza storica)
 - `how-i-became-an-ios-dev`: ebook PDF con viewer iframe ✓
 
 **Nessun file >100 MiB resterà nel repo** (il guardaroba "AV1-tutto" è stato
